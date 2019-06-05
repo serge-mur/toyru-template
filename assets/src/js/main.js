@@ -21,6 +21,9 @@
 // Импортируем другие js-файлы
 
 // A touch slideout navigation menu for your mobile web apps.
-//= ../../../node_modules/slideout/dist/slideout.min.js
+//= ../../../node_modules/slideout/dist/slideout.js
+
+// the last carousel you'll ever need
+//= ../../../node_modules/slick-carousel/slick/slick.js
 
 //= my.js

@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="css/main.min.css">
-    
-    <title>Стартовая страница</title>
+    <title>Главная страница</title>
 </head>
 
 <body>
@@ -24,88 +23,788 @@
 
     <div id="panel">
 
-        <button class="toggle-button">☰</button>
+        <button class="toggle-button d-sm-none">☰</button>
 
         <header id="header">
+            <div class="top-line">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-2">
+                            <div class="choice-city-block">
+                                <span>Москва и МО</span>                
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="contacts-top-block">
+                                <a href="tel:+78005002370">8 (800) 500-23-70;</a>
+                                <a href="tel:+74952152244">8 (495) 215-22-44</a>                    
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul class="nav justify-content-end" id="top-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Обратная связь</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Оптовикам</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Магазины</a>
+                                </li>
+                            </ul>            
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            
             <div class="container">
-            
-                <div class="top-banner border rounded my-2 overflow-hidden">
-                    <img src="https://via.placeholder.com/1200x200?text=top banner" class="img-fluid" alt="alt">
-                </div>
-            
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home
-                                    <span class="sr-only">(current)</span>
+                <div class="row align-items-center py-4">
+                    <div class="col-2">
+                        <a href="/" class="logo">
+                            <img src="../img/logo.png" alt="Интернет магазин игрушек Toy.ru">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <form class="form">
+                            <div class="input-group">
+                                <a href="#" class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                                <input class="form-control" type="text" placeholder="Поиск" aria-label="Search">
+                            </div>
                         </form>
                     </div>
-                </nav>    
+                    <div class="col-5">
+                        <ul class="nav nav-justified" id="top-icon-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Бесплатная доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Срочная доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Гарантия лучшей цены</a>
+                            </li>
+                        </ul>  
+                    </div>
+                    <div class="col-2">
+                        Корзина
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-fill" id="main-menu">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-catalog-button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ☰ Каталог игрушек
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Конструкторы LEGO</a>
+                                    <a class="dropdown-item" href="#">Электромобили</a>
+                                    <a class="dropdown-item" href="#">Отдых и спорт</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Мальчики</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Девочки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Возраст</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Бренды</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Персонажи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Распродажа</a>
+                            </li>
+                        </ul> 
+            <!-- 
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+            
+                            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                                
+                                <ul class="navbar-nav mr-auto">
+            
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Мальчики</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Девочки</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Возраст</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Бренды</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Персонажи</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Распродажа</a>
+                                    </li>
+            
+                                </ul>
+            
+                            </div>
+                        </nav>
+            -->
+                    </div>
+                </div>
             </div>
         </header>
 
-        <main id="main" class="my-2">
+        <main id="main" class="">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
-                        <div class="card overflow-hidden">
-                            <img src="https://via.placeholder.com/320x200?text=card image" class="card-img-top rounded-0" alt="alt">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col-3">
+                        <ul class="nav flex-column" id="mainpage-catalog-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Конструкторы LEGO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Электромобили</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Отдых и спорт</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Бластеры Нерф</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Игровые наборы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Игрушки для малышей</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Интерактивные игрушки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Конструкторы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Куклы и аксессуары</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Мягкие игрушки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Настольные игры</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Радиоуправляемые модели</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Развивающие игры и хобби</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Транспорт</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Всё для праздника</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Косметика и аксессуары</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Распродажа игрушек</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="main-slider my-4">
+                                    <a href="#">
+                                        <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
+                                    </a>
+                                </div>                                
+                            </div>
+                            <div class="col-12">
+                                <ul class="nav justify-content-between" id="mainpage-age-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">0-1 год</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">2-3 года</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">4-5 года</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">6-8 лет</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">9-12 лет</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">12+ лет</a>
+                                    </li>
+                                </ul>                                 
+                            </div>
+                            <div class="col-12">
+
+                                <div class="row my-4">
+                                    <a href="#" class="col-4">
+                                        <img src="img/lol_doll.png" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="#" class="col-4">
+                                        <img src="img/lego.png" class="img-fluid" alt="">                                        
+                                    </a>
+                                    <a href="#" class="col-4">
+                                        <img src="img/transformer.png" class="img-fluid" alt="">                                        
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="card overflow-hidden">
-                            <img src="https://via.placeholder.com/320x200?text=card image" class="card-img-top rounded-0" alt="alt">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col-3">
+                        <div class="gift-picking-block my-4">
+                            <h3>Подбор подарка</h3>
+                            <a class="d-block" href="#">Как выбрать подарок?</a>
+                        </div>
+                        <div class="brand-slider">
+                            <a href="#">
+                                <img class="img-fluid" src="img/brand_01.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/brand_02.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/brand_03.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/brand_01.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/brand_02.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/brand_03.png" alt="char1">
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills my-4" id="top-goods-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="new-items-tab" data-toggle="tab" href="#new-items" role="tab" aria-controls="new-items" aria-selected="true">Новинки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="bestseller-tab" data-toggle="tab" href="#bestseller" role="tab" aria-controls="bestseller" aria-selected="false">Хит продаж</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="best-price-tab" data-toggle="tab" href="#best-price" role="tab" aria-controls="best-price" aria-selected="false">Лучшая цена</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="new-lego-tab" data-toggle="tab" href="#new-lego" role="tab" aria-controls="new-lego" aria-selected="false">Новинки LEGO</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="top-goods-content">
+                            <div class="tab-pane fade show active" id="new-items" role="tabpanel" aria-labelledby="new-items-tab">
+                                <div class="row">
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-toy-gray float-right mt-2" href="#">К самым выгодным предложениям</a>
                             </div>
+                            <div class="tab-pane fade" id="bestseller" role="tabpanel" aria-labelledby="bestseller-tab">
+                                <div class="row">
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="best-price" role="tabpanel" aria-labelledby="best-price-tab">
+                                <div class="row">
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="new-lego" role="tabpanel" aria-labelledby="new-lego-tab">
+                                <div class="row">
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="card product-preview">
+                                            <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col-6">
+                                                        <div class="product-price">999 р.</div>    
+                                                        <div class="product-discount">
+                                                            <span class="discount-price">1399 р.</span>
+                                                            <span class="discount-percent">-30%</span>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#" class="btn btn-primary">1</a>
+                                                        <a href="#" class="btn btn-secondary">2</a>
+                                                    </div>             
+                                                </div>
+                                                <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
+                                            </div>
+                                            <div class="card-footer">
+                                                звездочки
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="char-slider my-4">
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_01.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_02.png" alt="char2">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_03.png" alt="char3">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_04.png" alt="char4">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_05.png" alt="char5">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_01.png" alt="char1">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_02.png" alt="char2">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_03.png" alt="char3">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_04.png" alt="char4">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/char_05.png" alt="char5">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-4" id="news-content-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true">Новости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Обзоры</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Видео</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="news-content-content">
+                            <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+                                <div class="row news-block">
+                                    <div class="col-3">
+                                        <div class="news-item">
+                                            <div class="date">22.02.19</div>
+                                            <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
+                                            <p>Промокод на скидку при покупке билета...</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="news-item">
+                                            <div class="date">22.02.19</div>
+                                            <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
+                                            <p>Промокод на скидку при покупке билета...</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="news-item">
+                                            <div class="date">22.02.19</div>
+                                            <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
+                                            <p>Промокод на скидку при покупке билета...</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="news-item">
+                                            <div class="date">22.02.19</div>
+                                            <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
+                                            <p>Промокод на скидку при покупке билета...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+2
+                            </div>
+                            <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+3
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="welcome-block my-5">
+                            <div class="welcome-intro">
+                                <h1 class="text-center">Интернет магазин игрушек для детей Toy.ru</h1>
+                                <p>Друзья! Рады приветствовать Вас, и наших постоянных клиентов, и впервые посетивших сайт нашего интернет-магазина игрушек для детей Toy.ru! С удовольствием представляем вашему вниманию товары самых известных и уважаемых мировых брендов среди производителей игрушек.</p>                                                            
+                            </div>    
+                            <div class="collapse" id="collapse-welcome">
+                                <p>У нас Вы можете купить детские игрушки всемирно известной компании <b><a target="_blank" href="https://www.toy.ru/catalog/producers/hasbro/">HASBRO</a></b> (Хасбро) – легендарную экономическую стратегию <a target="_blank" href="https://www.toy.ru/catalog/producers/Monopoly-Hasbro/">Монополия</a> в самых различных версиях и <a target="_blank" href="https://www.toy.ru/catalog/producers/Other-Games/">другие настольные игры</a> от Хасбро (Hasbro Other Games), интерактивные игрушки <a target="_blank" href="https://www.toy.ru/catalog/producers/FURBY-Hasbro/">FURBY</a> (Фёрби) и <a target="_blank" href="https://www.toy.ru/catalog/producers/Furreal-Friends-Hasbro/">FURREAL FRIENDS</a> (Фурреал Френдс), знаменитое игрушечное оружие <a target="_blank" href="https://www.toy.ru/catalog/producers/NERF/">NERF</a> (Нёрф), потрясающие игрушки-трансформеры (<a target="_blank" href="https://www.toy.ru/catalog/producers/Transformers/">Transformers</a>), пластилин <a target="_blank" href="https://www.toy.ru/catalog/producers/PLAY-DOH/">PLAY-DOH</a> (Плэй-До) и масса для лепки <a target="_blank" href="https://www.toy.ru/catalog/producers/DohVinci/">DohVinci</a> (ДоВинчи), игрушки по мотивам культовой космической саги «Звездные войны» (<a target="_blank" href="https://www.toy.ru/catalog/producers/STAR-WARS-Hasbro/">Hasbro Star Wars</a>) и, конечно же, любимые всеми девочками игрушки <a target="_blank" href="https://www.toy.ru/catalog/producers/My-Little-Pony/">My Little Pony</a>, созданные по популярнейшему мультсериалу «Дружба – это чудо!». Также в ассортименте нашего магазина вы сможете найти мягкие игрушки <a target="_blank" href="https://www.toy.ru/catalog/producers/Aurora/">Aurora</a> (Аврора), головоломки <a target="_blank" href="https://www.toy.ru/catalog/producers/Perplexus/">Perplexus</a> (Перплексус), интерактивные куклы от немецкой компании <a target="_blank" href="https://www.toy.ru/catalog/producers/Zapf-Creation/">Zapf Creation</a> (Бэби Борн и Бэби Анабель), куколки <a target="_blank" href="https://www.toy.ru/catalog/producers/Lalaloopsy/">Lalaloopsy</a> (Лалалупси), наборы конструкторов <a target="_blank" href="https://www.toy.ru/catalog/lego/">LEGO</a> и <a target="_blank" href="https://www.toy.ru/catalog/meccano/">Meccano</a>, кинетический песок <a target="_blank" href="https://www.toy.ru/catalog/producers/Kinetic-sand/">Kinetic Sand</a> (Кинетик Сэнд), игрушки, созданные по обожаемому детишками мультфильму «Щенячий патруль» (<a target="_blank" href="https://www.toy.ru/catalog/producers/Paw-Patrol/">Paw Patrol</a>), куклы, выполненные в виде принцесс Диснея (<a target="_blank" href="https://www.toy.ru/catalog/producers/Disney-Princess/">Disney Princess</a>), коллекционные масштабированные автомобили <a target="_blank" href="https://www.toy.ru/catalog/producers/Welly/">Welly</a>, в том числе и на радиоуправлении, сборные модели роботов <a target="_blank" href="https://www.toy.ru/catalog/konstruktory_lbx/">LBX</a>, куклы <a target="_blank" href="https://www.toy.ru/catalog/producers/Moxie/">Moxie</a> и многое многое другое.</p>
+                            </div>
+                            <a class="btn btn-toy-gray float-right mt-2" data-toggle="collapse" href="#collapse-welcome" role="button" aria-expanded="false" aria-controls="collapse-welcome">Развернуть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="description-block my-4">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-3">
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary">Подписаться</button>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
 
         </main>
 
         <footer id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">footer 1</div>
-                    <div class="col-4">footer 2</div>
-                    <div class="col-4">footer 3</div>
+                    <div class="col-3">
+                        <ul class="nav flex-column footer-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Личный кабинет</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Клуб скидок</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Правила бонусной программы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Договор оферты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Журнал TOY.RU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Скачать каталог TOY.RU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Интерактивные игрушки</a>
+                            </li>
+                        </ul>            
+                    </div>
+                    <div class="col-3">
+                        <ul class="nav flex-column footer-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Благотворительный проект</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Реквизиты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контактная информация</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Аренда торговых площадей</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Вакансии</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Обзоры</a>
+                            </li>
+                        </ul>            
+                    </div>
+                    <div class="col-3">
+                        <ul class="nav flex-column footer-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Возврат товара</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Сервис</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Гарантия низкой цены</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Как выбрать игрушку</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Как купить</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>            
+                    </div>
+                    <div class="col-3">
+                        Контакты
+                    </div>
+                </div>
+                <div class="row copyright-block my-4 text-center">
+                    <div class="col-4">
+                        <div>Все права защищены ООО «Той.ру» 2010-2019 г.</div>
+                    </div>
+                    <div class="col-4">
+                        <div>Электронная почта: <a href="mailto:info@toy.ru">info@toy.ru</a></div>
+                    </div>
+                    <div class="col-4">
+                        <div>©2019 Интернет-магазин игрушек TOY.RU</div>
+                    </div>
                 </div>
             </div>
             <script src="js/main.min.js"></script>

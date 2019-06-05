@@ -1,5 +1,43 @@
-// Variables Bootstrap 4
+// Toyru v.1.0
+// Bootstrap 4 variables
 
-// $red:     #cc2eaa;
-// $green:   #2ecc71;
+// colors
+$toy-light-orange: #faa74b;
+$toy-orange: #ef7b37;
+$toy-dark-orange: #f15922;
+$toy-blue: #aedced;
+$toy-dark-blue: #50c6d8;
 
+$toy-dark-gray: #505050;
+$toy-gray: #adadad;
+$toy-light-gray: #f6f6f6;
+$toy-other-gray: #e8e8e8;
+
+$primary: $toy-dark-orange;
+$secondary: $toy-orange;
+
+// options
+$enable-responsive-font-sizes: true;
+
+// fonts 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+$font-family-base: 'PT Sans', sans-serif;
+$body-color: $toy-dark-gray;
+
+// links
+$link-color: $toy-dark-blue;
+
+// navs
+$nav-link-transition: background-color .15s ease-in-out, color .15s ease-in-out;
+
+// pills
+$nav-pills-link-active-color: $toy-dark-orange;
+$nav-pills-link-active-bg: transparent;
+
+
+// borders
+$border-radius: 5px;
+$border-color: $toy-gray;
+
+// forms
+$input-focus-border-color: $toy-dark-blue;

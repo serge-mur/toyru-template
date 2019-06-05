@@ -1,10 +1,253 @@
-/* https://github.com/Mango/slideout */
+.rfs-title {
+    @include font-size(4rem); //rfs
+}
 
+// rewrite bootstrap
+.nav-pills {
+    .nav-link {
+        color: $toy-gray;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        &:hover {
+            color: $nav-pills-link-active-color;
+            font-weight: bold;
+        }
+    }
+    .nav-link.active,
+    .show > .nav-link {
+        color: $nav-pills-link-active-color;
+        background-color: $nav-pills-link-active-bg;
+        font-weight: bold;
+    }
+    .nav-item:first-child {
+        .nav-link {
+            padding-left: 0;
+        }
+    }
+}
+
+/* header */
+.top-line {
+    background-color: $toy-light-gray;
+}
+.contacts-top-block {
+    a {
+        font-size: 1rem;
+        color: $toy-dark-gray;
+        &:hover {
+            color: darken($toy-dark-gray, 10%);
+            text-decoration: none;
+        }        
+    }
+
+}
+
+#top-menu {
+    .nav-item {
+        .nav-link {          
+            font-size: 1rem;
+            color: $toy-gray;
+            padding: .5rem .4rem;
+            &:hover {
+                color: darken($toy-gray, 10%);
+            }
+        }
+    }  
+}
+
+#top-icon-menu {
+    background-color: $toy-light-gray;
+    border-radius: $border-radius;
+    .nav-item {
+        .nav-link {          
+            font-size: 1rem;
+            color: $toy-dark-gray;
+            padding: .5rem .5rem;
+            &:hover {
+                color: darken($toy-dark-gray, 10%);
+            }
+        }
+    }  
+}
+
+#main-menu {
+    .nav-item {
+        .nav-link {   
+            background-color: $toy-light-orange;             
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 0.875rem 1rem;
+            transition: $nav-link-transition;
+            &:hover {
+                background-color: darken($toy-light-orange, 10%);
+            }
+        }
+        #dropdown-catalog-button {
+            background-color: $toy-dark-orange;
+            &:hover {
+                background-color: darken($toy-dark-orange, 10%);
+            }
+        }
+        &:first-child {
+            .nav-link {
+                border-top-left-radius: 5px;               
+                border-bottom-left-radius: 5px;               
+            }        
+        }
+        &:last-child {
+            .nav-link {
+                border-top-right-radius: 5px;               
+                border-bottom-right-radius: 5px;               
+            }
+        }                 
+    }  
+}
+
+/* card product preview */
+.product-preview {
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+    height: 100%;
+    &:hover {
+        border: 1px solid $toy-other-gray;
+    }
+    .card-img-top {
+        margin-top: 1.5rem;
+    }
+    .card-body {
+        .card-title {
+            display: block;
+            font-size: 0.875rem;
+            line-height: 1.2;
+            color: $toy-gray;
+            margin: .5rem 0;
+        }
+        .product-price {
+            font-size: 1.125rem;
+            color: $toy-dark-orange;
+        }
+        .product-discount {
+            .discount-price {
+                font-size: 1rem;
+                text-decoration: line-through;
+            }
+            .discount-percent {
+                font-size: 0.875rem;
+                color: #fff;
+                background-color: $toy-dark-orange;
+                padding: 2px 4px; 
+            }
+        }
+    }
+    .card-footer {
+        padding: .75rem 1.25rem;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+/* footer */
+.footer-menu {
+    .nav-item {
+        .nav-link {          
+            font-size: 1.125rem;
+            line-height: 1;
+            color: $toy-dark-gray;
+            padding: .5rem .5rem;
+            &:hover {
+                color: darken($toy-dark-gray, 50%);
+            }
+        }
+    }  
+}
+
+.copyright-block {
+    color: $toy-gray;
+}
+
+
+/* main page */
+#mainpage-catalog-menu {
+    border-bottom-left-radius: 5px;  
+    border-bottom-right-radius: 5px;  
+    box-shadow: 0 0 7px rgba(10, 10, 10, 0.1);
+    padding: 1rem 1rem;
+    .nav-item {
+        .nav-link {          
+            font-size: 1.125rem;
+            line-height: 1;
+            color: $toy-dark-gray;
+            padding: .5rem 1rem;
+            &:hover {
+                color: $toy-dark-orange;
+            }
+        }
+    }  
+}
+
+#mainpage-age-menu {
+    .nav-item {
+        .nav-link {          
+            font-size: 1.125rem;
+            color: $toy-dark-gray;
+            background-color: $toy-light-gray;
+            padding: .5rem .5rem;
+            border-radius: $border-radius;
+            transition: $nav-link-transition;
+            &:hover {
+                color: #fff;
+                background-color: $toy-light-orange;
+            }
+        }
+    }  
+}
+
+.gift-picking-block {
+    background-color: $toy-light-gray;
+}
+
+.welcome-block {
+    h1 {
+        color: $toy-gray;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+    }
+}
+
+.btn-toy-gray {
+    font-weight: 1rem;
+    color: $toy-dark-gray;
+    background-color: $toy-light-gray;
+    padding: .125rem 1rem;
+    &:after {
+        content: '>';
+        margin-left: .5rem;
+    }
+    &:hover {
+        color: #fff;
+        background-color: $toy-dark-gray;    
+        transition: $nav-link-transition;    
+    }
+    &:focus,
+    &.focus {
+        box-shadow: none;
+    }
+}
+
+.description-block {
+    background-image: url(../img/descr_back.jpg);
+}
+
+
+
+/* slideout panel styles */
+/* https://github.com/Mango/slideout */
 body {
     width: 100%;
     height: 100%;
 }
-  
 .slideout-menu {
     position: fixed;
     top: 0;
@@ -16,7 +259,6 @@ body {
     z-index: 0;
     display: none;
 }
-  
 .slideout-menu {
     &-left {
         left: 0;
@@ -25,15 +267,13 @@ body {
         right: 0;        
     }
 }
-  
 .slideout-panel {
     position: relative;
     z-index: 1;
     will-change: transform;
     background-color: #FFF; /* A background-color is required */
     min-height: 100vh;
-}
-  
+}  
 .slideout-open {
     &,
     body,
@@ -41,7 +281,6 @@ body {
         overflow: hidden;
     }
 }
-
 .slideout-open .slideout-menu {
     display: block;
 }
