@@ -1,6 +1,21 @@
 .rfs-title {
     @include font-size(4rem); //rfs
 }
+/* 
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.login-icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    font-size: 2rem;
+}
+ */
 
 // rewrite bootstrap
 .nav-pills {
@@ -117,6 +132,7 @@
         margin-top: 1.5rem;
     }
     .card-body {
+        padding-bottom: 0;
         .card-title {
             display: block;
             font-size: 0.875rem;
@@ -140,11 +156,27 @@
                 padding: 2px 4px; 
             }
         }
+        .btn-favorite {
+            color: $toy-dark-orange;
+            font-size: 1rem;
+        }
+        .btn-buy {
+            color: $toy-orange;
+            font-size: 1rem;            
+        }
     }
     .card-footer {
-        padding: .75rem 1.25rem;
+        padding: 0 1.25rem .75rem 1.25rem;
         background-color: transparent;
         border: none;
+        .stars-rating {
+            font-size: 0.75rem;
+            color: $toy-light-orange;
+        }
+        .num-vote {
+            font-size: 0.75rem;
+            margin-left: 1rem;
+        }
     }
 }
 
