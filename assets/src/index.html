@@ -9,18 +9,32 @@
 <body>
 
     <nav id="menu">
-        <h2>Menu</h2>
         <nav class="nav flex-column">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <div class="choice-city-block">
+                <span class="nav-link">Москва и МО</span>             
+            </div> 
+            <hr>           
+            <div class="contacts-top-block">
+                <a class="nav-link" href="tel:+78005002370">8 (800) 500-23-70;</a>
+                <a class="nav-link" href="tel:+74952152244">8 (495) 215-22-44</a>                    
+            </div>
+            <hr>
+            <a class="nav-link" href="#">О компании</a>
+            <a class="nav-link" href="#">Обратная связь</a>
+            <a class="nav-link" href="#">Оптовикам</a>
+            <a class="nav-link" href="#">Оплата</a>
+            <a class="nav-link" href="#">Доставка</a>
+            <a class="nav-link" href="#">Магазины</a>
+            <hr>
+            <a class="nav-link" href="#"><i class="fas fa-truck"></i> Бесплатная доставка</a>
+            <a class="nav-link" href="#"><i class="fas fa-rocket"></i> Срочная доставка</a>
+            <a class="nav-link" href="#"><i class="fas fa-percent"></i> Гарантия лучшей цены</a>
         </nav>
     </nav>
 
     <div id="panel">
 
-        <button class="toggle-button d-sm-none"><i class="fas fa-bars"></i></button>
+        <button class="toggle-button d-lg-none"><i class="fas fa-bars"></i></button>
 
         <header id="header">
             //= template/header.html
@@ -30,7 +44,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="d-none d-lg-block col-lg-3">
                         <ul class="nav flex-column" id="mainpage-catalog-menu">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Конструкторы LEGO</a>
@@ -85,11 +99,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
 
                         <div class="row">
                             <div class="col-12">
-                                <div class="main-slider my-4">
+                                <div class="main-slider my-4" data-slideout-ignore>
                                     <a href="#">
                                         <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
                                     </a>
@@ -141,25 +155,21 @@
                         </div>
 
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="gift-picking-block my-4 p-2">
                             <h3>Подбор подарка</h3>
                             <a class="d-block" href="#">Как выбрать подарок?</a>                            
                             <form>
-                                <div class="gender-choice">
-                                    <span>Девочке</span>
-                                    <span>Мальчику</span>
+                                <div class="form-group gender-choice text-right my-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="checkbox-girl" value="option1">
+                                        <label class="form-check-label" for="checkbox-girl">Девочке</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="checkbox-boy" value="option2">
+                                        <label class="form-check-label" for="checkbox-boy">Мальчику</label>
+                                    </div>
                                 </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
-                                </div>
-
                                 <div class="form-group">
                                     <select class="form-control" id="age-select">
                                         <option>Выберите возраст</option>
@@ -222,7 +232,7 @@
                             </form>                        
                         </div>
 
-                        <div class="brand-slider">
+                        <div class="brand-slider" data-slideout-ignore>
                             <a href="#">
                                 <img class="img-fluid" src="img/brand_01.png" alt="char1">
                             </a>
@@ -320,7 +330,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="char-slider my-4">
+                        <div class="char-slider my-4" data-slideout-ignore>
                             <a href="#">
                                 <img class="img-fluid" src="img/char_01.png" alt="char1">
                             </a>
@@ -374,28 +384,28 @@
                         <div class="tab-content" id="news-content-content">
                             <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
                                 <div class="row news-block">
-                                    <div class="col-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="news-item">
                                             <div class="date">22.02.19</div>
                                             <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
                                             <p>Промокод на скидку при покупке билета...</p>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="news-item">
                                             <div class="date">22.02.19</div>
                                             <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
                                             <p>Промокод на скидку при покупке билета...</p>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="news-item">
                                             <div class="date">22.02.19</div>
                                             <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
                                             <p>Промокод на скидку при покупке билета...</p>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="news-item">
                                             <div class="date">22.02.19</div>
                                             <h5>Огромный дом L.O.L. уже в Toy.ru</h5>
@@ -435,16 +445,16 @@
             <div class="description-block my-4">
                 <div class="container">
                     <div class="row py-5">
-                        <div class="col-3">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <input class="form-control" type="text">
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <input class="form-control" type="text">
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <input class="form-control" type="text">
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <button class="btn btn-primary">Подписаться</button>
                         </div>
                     </div>

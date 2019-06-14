@@ -21848,5 +21848,4 @@ $(document).ready(function () {
             }]
     });
 
-    $("#range-price").slider({});
 });

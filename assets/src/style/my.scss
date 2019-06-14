@@ -49,6 +49,7 @@
     a {
         font-size: 1rem;
         color: $toy-dark-gray;
+        white-space: nowrap;
         &:hover {
             color: darken($toy-dark-gray, 10%);
             text-decoration: none;
@@ -182,18 +183,29 @@
 
 /* footer */
 .footer-menu {
-    .nav-item {
-        .nav-link {          
-            font-size: 1.125rem;
-            line-height: 1;
-            color: $toy-dark-gray;
-            padding: .5rem .5rem;
-            &:hover {
-                color: darken($toy-dark-gray, 50%);
-            }
+    .nav-link {          
+        font-size: 1.125rem;
+        line-height: 1;
+        color: $toy-dark-gray;
+        padding: .5rem .5rem;
+        &:hover {
+            color: darken($toy-dark-gray, 50%);
         }
     }  
 }
+
+.payment-block {
+    img {
+        height: 35px;
+    }
+}
+.awards-block {
+    img {
+        width: 57px;
+        height: 86px;
+    }
+}
+
 
 .copyright-block {
     color: $toy-gray;
@@ -238,6 +250,52 @@
 
 .gift-picking-block {
     background-color: $toy-light-gray;
+}
+
+.gender-choice {
+    input[type=checkbox] {
+        position: absolute;
+        left: -9999px;
+
+        & + label {
+            position: relative;
+            display: block;
+            color: $toy-gray;             
+            padding: 0 20px 0 5px;
+            cursor: pointer;
+            // Checkbox setup
+            &:before {
+                display: block;
+                content: "";
+                position: absolute;
+                left: -35px;
+                top: -10px;
+                width: 37px;
+                height: 49px;
+                filter: grayscale(100%);              
+            }
+        }
+        &#checkbox-girl + label {
+            &:before {
+                background: url(../img/girl.svg) no-repeat;        
+                // background: url(../img/girl_icon.png) no-repeat;                     
+            }
+        }    
+        &#checkbox-boy + label {
+            &:before {
+                background: url(../img/boy.svg) no-repeat;   
+                // background: url(../img/boy_icon.png) no-repeat;                     
+            }
+        }    
+        // Checked
+        &:checked + label {
+            color: $toy-dark-orange;
+            &:before {
+                // border: 1px dotted $toy-gray;
+                filter: none;
+            }
+        }
+    }
 }
 
 .welcome-block {
@@ -303,7 +361,7 @@ body {
     position: relative;
     z-index: 1;
     will-change: transform;
-    background-color: #FFF; /* A background-color is required */
+    background-color: #fff; /* A background-color is required */
     min-height: 100vh;
 }  
 .slideout-open {
@@ -316,3 +374,76 @@ body {
 .slideout-open .slideout-menu {
     display: block;
 }
+
+// icons system
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gkkkz6');
+    src:  url('../fonts/icomoon.eot?gkkkz6#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gkkkz6') format('truetype'),
+      url('../fonts/icomoon.woff?gkkkz6') format('woff'),
+      url('../fonts/icomoon.svg?gkkkz6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-delivery-truck:before {
+    content: "\e900";
+  }
+  .icon-discount-voucher:before {
+    content: "\e901";
+  }
+  .icon-facebook-logo-button:before {
+    content: "\e902";
+  }
+  .icon-heart:before {
+    content: "\e903";
+  }
+  .icon-info:before {
+    content: "\e904";
+  }
+  .icon-list:before {
+    content: "\e905";
+  }
+  .icon-odnoklassniki-logo:before {
+    content: "\e906";
+  }
+  .icon-profile:before {
+    content: "\e907";
+  }
+  .icon-share:before {
+    content: "\e908";
+  }
+  .icon-shopping-cart:before {
+    content: "\e909";
+  }
+  .icon-star_color:before {
+    content: "\e90a";
+  }
+  .icon-star_contur:before {
+    content: "\e90b";
+  }
+  .icon-startup:before {
+    content: "\e90c";
+  }
+  .icon-vk-social-logotype:before {
+    content: "\e90d";
+  }
+  .icon-youtube:before {
+    content: "\e90e";
+  }

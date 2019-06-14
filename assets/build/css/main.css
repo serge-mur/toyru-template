@@ -7829,7 +7829,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .contacts-top-block a {
   font-size: 1rem;
-  color: #505050; }
+  color: #505050;
+  white-space: nowrap; }
   .contacts-top-block a:hover {
     color: #373737;
     text-decoration: none; }
@@ -7921,13 +7922,20 @@ a.text-dark:hover, a.text-dark:focus {
       margin-left: 1rem; }
 
 /* footer */
-.footer-menu .nav-item .nav-link {
+.footer-menu .nav-link {
   font-size: 1.125rem;
   line-height: 1;
   color: #505050;
   padding: .5rem .5rem; }
-  .footer-menu .nav-item .nav-link:hover {
+  .footer-menu .nav-link:hover {
     color: black; }
+
+.payment-block img {
+  height: 35px; }
+
+.awards-block img {
+  width: 57px;
+  height: 86px; }
 
 .copyright-block {
   color: #adadad; }
@@ -7959,6 +7967,35 @@ a.text-dark:hover, a.text-dark:focus {
 
 .gift-picking-block {
   background-color: #f6f6f6; }
+
+.gender-choice input[type=checkbox] {
+  position: absolute;
+  left: -9999px; }
+  .gender-choice input[type=checkbox] + label {
+    position: relative;
+    display: block;
+    color: #adadad;
+    padding: 0 20px 0 5px;
+    cursor: pointer; }
+    .gender-choice input[type=checkbox] + label:before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: -10px;
+      width: 37px;
+      height: 49px;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+  .gender-choice input[type=checkbox]#checkbox-girl + label:before {
+    background: url(../img/girl.svg) no-repeat; }
+  .gender-choice input[type=checkbox]#checkbox-boy + label:before {
+    background: url(../img/boy.svg) no-repeat; }
+  .gender-choice input[type=checkbox]:checked + label {
+    color: #f15922; }
+    .gender-choice input[type=checkbox]:checked + label:before {
+      -webkit-filter: none;
+              filter: none; }
 
 .welcome-block h1 {
   color: #adadad;
@@ -8010,7 +8047,7 @@ body {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #FFF;
+  background-color: #fff;
   /* A background-color is required */
   min-height: 100vh; }
 
@@ -8021,3 +8058,68 @@ body {
 
 .slideout-open .slideout-menu {
   display: block; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?gkkkz6");
+  src: url("../fonts/icomoon.eot?gkkkz6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?gkkkz6") format("truetype"), url("../fonts/icomoon.woff?gkkkz6") format("woff"), url("../fonts/icomoon.svg?gkkkz6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-delivery-truck:before {
+  content: "\e900"; }
+
+.icon-discount-voucher:before {
+  content: "\e901"; }
+
+.icon-facebook-logo-button:before {
+  content: "\e902"; }
+
+.icon-heart:before {
+  content: "\e903"; }
+
+.icon-info:before {
+  content: "\e904"; }
+
+.icon-list:before {
+  content: "\e905"; }
+
+.icon-odnoklassniki-logo:before {
+  content: "\e906"; }
+
+.icon-profile:before {
+  content: "\e907"; }
+
+.icon-share:before {
+  content: "\e908"; }
+
+.icon-shopping-cart:before {
+  content: "\e909"; }
+
+.icon-star_color:before {
+  content: "\e90a"; }
+
+.icon-star_contur:before {
+  content: "\e90b"; }
+
+.icon-startup:before {
+  content: "\e90c"; }
+
+.icon-vk-social-logotype:before {
+  content: "\e90d"; }
+
+.icon-youtube:before {
+  content: "\e90e"; }
