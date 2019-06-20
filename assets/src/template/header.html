@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-2 col-xl-2">
                 <div class="choice-city-block">
-                    <span>Москва и МО</span>                
+                    <span>Москва и МО</span>
                 </div>
             </div>
             <div class="col-lg-2 col-xl-4">
@@ -38,7 +38,7 @@
     </div>    
 </div>
 
-<div class="container">
+<div class="container d-none d-lg-block">
     <div class="row align-items-center py-4">
         <div class="col-3 col-lg-2">
             <a href="/" class="logo">
@@ -50,7 +50,7 @@
             <form class="form">
                 <div class="input-group border p-1">
                     <div class="input-group-prepend border-0">
-                        <button id="button-addon" type="button" class="btn btn-link text-info"><i class="fa fa-search"></i></button>
+                        <button id="button-addon" type="button" class="btn btn-link text-info"><i class="icon-magnifying-glass"></i></button>
                     </div>
                     <input type="search" placeholder="Искать..." aria-describedby="button-addon" class="form-control bg-none border-0">
                 </div>
@@ -81,7 +81,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container d-none d-lg-block">
     <div class="row">
         <div class="col-12">
             <ul class="nav nav-fill" id="main-menu">
@@ -89,32 +89,32 @@
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown-catalog-button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-bars"></i> Каталог игрушек
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><!--  show -->
-                        <a class="dropdown-item" href="#">Конструкторы LEGO</a>
-                        <a class="dropdown-item" href="#">Электромобили</a>
-                        <a class="dropdown-item" href="#">Отдых и спорт</a>
-                        <a class="dropdown-item" href="#">Бластеры Нерф</a>
-<!-- 
-                        <a class="dropdown-item dropdown dropdown-toggle" href="#" id="dropdown-catalog-button1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Игровые наборы</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Минифигурки</a>
-                                <a class="dropdown-item" href="#">Динозавры</a>
-                                <a class="dropdown-item" href="#">Трансформеры</a>     
-                            </div> -->
-
-                        <a class="dropdown-item" href="#">Игрушки для малышей</a>
-                        <a class="dropdown-item" href="#">Интерактивные игрушки</a>
-                        <a class="dropdown-item" href="#">Конструкторы</a>
-                        <a class="dropdown-item" href="#">Куклы и аксессуары</a>
-                        <a class="dropdown-item" href="#">Мягкие игрушки</a>
-                        <a class="dropdown-item" href="#">Настольные игры</a>
-                        <a class="dropdown-item" href="#">Радиоуправляемые модели</a>
-                        <a class="dropdown-item" href="#">Развивающие игры и хобби</a>
-                        <a class="dropdown-item" href="#">Транспорт</a>
-                        <a class="dropdown-item" href="#">Всё для праздника</a>
-                        <a class="dropdown-item" href="#">Косметика и аксессуары</a>
-                        <a class="dropdown-item" href="#">Распродажа игрушек</a>
-                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><!--  show  -->
+                        <li><a class="dropdown-item" href="#">Конструкторы LEGO</a></li>
+                        <li><a class="dropdown-item" href="#">Электромобили</a></li>
+                        <li><a class="dropdown-item" href="#">Отдых и спорт</a></li>
+                        <li><a class="dropdown-item" href="#">Бластеры Нерф</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Игровые наборы</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Минифигурки</a></li>
+                                <li><a class="dropdown-item" href="#">Динозавры</a></li>
+                                <li><a class="dropdown-item" href="#">Трансформеры</a></li>     
+                            </ul>                                               
+                        </li>
+                        <li><a class="dropdown-item" href="#">Игрушки для малышей</a></li>
+                        <li><a class="dropdown-item" href="#">Интерактивные игрушки</a></li>
+                        <li><a class="dropdown-item" href="#">Конструкторы</a></li>
+                        <li><a class="dropdown-item" href="#">Куклы и аксессуары</a></li>
+                        <li><a class="dropdown-item" href="#">Мягкие игрушки</a></li>
+                        <li><a class="dropdown-item" href="#">Настольные игры</a></li>
+                        <li><a class="dropdown-item" href="#">Радиоуправляемые модели</a></li>
+                        <li><a class="dropdown-item" href="#">Развивающие игры и хобби</a></li>
+                        <li><a class="dropdown-item" href="#">Транспорт</a></li>
+                        <li><a class="dropdown-item" href="#">Всё для праздника</a></li>
+                        <li><a class="dropdown-item" href="#">Косметика и аксессуары</a></li>
+                        <li><a class="dropdown-item" href="#">Распродажа игрушек</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Мальчики</a>
@@ -138,53 +138,7 @@
                     <a class="nav-link" href="#">Распродажа</a>
                 </li>
             </ul> 
-<!-- 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    
-                    <ul class="navbar-nav mr-auto">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Мальчики</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Девочки</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Возраст</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Бренды</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Персонажи</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Акции</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Распродажа</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </nav>
--->
         </div>
     </div>
 </div>

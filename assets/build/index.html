@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link rel="stylesheet" href="css/main.min.css">
     <title>Главная страница</title>
@@ -11,33 +11,116 @@
 
 <body>
 
-    <nav id="menu">
-        <nav class="nav flex-column">
-            <div class="choice-city-block">
-                <span class="nav-link">Москва и МО</span>             
-            </div> 
-            <hr>           
-            <div class="contacts-top-block">
-                <a class="nav-link" href="tel:+78005002370">8 (800) 500-23-70;</a>
-                <a class="nav-link" href="tel:+74952152244">8 (495) 215-22-44</a>                    
+    <nav class="nav justify-content-around text-center d-lg-none" id="mobile-icon-menu">
+        
+        <a class="nav-link toggle-button" href="#">
+            <i class="icon-menu-options"></i>
+            <div>Каталог</div>
+        </a>  
+        <a class="nav-link" href="#">
+            <i class="icon-magnifying-glass"></i>
+            <div>Поиск</div>
+        </a>
+        <a class="nav-link" href="/">
+            <img src="img/logo_toyru.svg" alt="Интернет магазин игрушек Toy.ru">
+        </a>
+        <a class="nav-link" href="#">
+            <i class="icon-profile"></i>
+            <div>Профиль</div>
+        </a>             
+        <a class="nav-link" href="#">
+            <i class="icon-shopping-cart"></i>
+            <div>Корзина</div>
+        </a>
+    </nav>                 
+
+
+    <div id="offcanvas-menu">
+
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    <i class="icon-duck"></i> Каталог
+                </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#">Конструкторы LEGO</a>
+                        <a class="nav-link" href="#">Электромобили</a>
+                        <a class="nav-link" href="#">Отдых и спорт</a>
+                        <a class="nav-link" href="#">Бластеры Нерф</a>
+                        <a class="nav-link" href="#">Игровые наборы</a>
+                        <a class="nav-link" href="#">Игрушки для малышей</a>
+                        <a class="nav-link" href="#">Интерактивные игрушки</a>
+                        <a class="nav-link" href="#">Конструкторы</a>
+                        <a class="nav-link" href="#">Куклы и аксессуары</a>
+                        <a class="nav-link" href="#">Мягкие игрушки</a>
+                        <a class="nav-link" href="#">Настольные игры</a>
+                        <a class="nav-link" href="#">Радиоуправляемые модели</a>
+                        <a class="nav-link" href="#">Развивающие игры и хобби</a>
+                        <a class="nav-link" href="#">Транспорт</a>
+                        <a class="nav-link" href="#">Всё для праздника</a>
+                        <a class="nav-link" href="#">Косметика и аксессуары</a>
+                        <a class="nav-link" href="#">Распродажа игрушек</a>
+                    </nav>
+                </div>
+                </div>
             </div>
-            <hr>
-            <a class="nav-link" href="#">О компании</a>
-            <a class="nav-link" href="#">Обратная связь</a>
-            <a class="nav-link" href="#">Оптовикам</a>
-            <a class="nav-link" href="#">Оплата</a>
-            <a class="nav-link" href="#">Доставка</a>
-            <a class="nav-link" href="#">Магазины</a>
-            <hr>
-            <a class="nav-link" href="#"><i class="fas fa-truck"></i> Бесплатная доставка</a>
-            <a class="nav-link" href="#"><i class="fas fa-rocket"></i> Срочная доставка</a>
-            <a class="nav-link" href="#"><i class="fas fa-percent"></i> Гарантия лучшей цены</a>
-        </nav>
-    </nav>
+            
+            <div class="card">
+                <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    <i class="icon-more-details-circular-button"></i> Дополнительно
+                </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#">О компании</a>
+                        <a class="nav-link" href="#">Обратная связь</a>
+                        <a class="nav-link" href="#">Оптовикам</a>
+                        <a class="nav-link" href="#">Оплата</a>
+                        <a class="nav-link" href="#">Доставка</a>
+                        <a class="nav-link" href="#">Магазины</a>
+                    </nav>
+                </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" href="#">
+                        <i class="icon-tag"></i> Бренды
+                    </a>
+                </div>
+            </div>
 
-    <div id="panel">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" href="#">
+                        <i class="icon-batman"></i> Персонажи
+                    </a>
+                </div>
+            </div>
+                
+        </div>
 
-        <button class="toggle-button d-lg-none"><i class="fas fa-bars"></i></button>
+<!--         
+        <div class="choice-city-block">
+            <span class="nav-link">Москва и МО</span>             
+        </div> 
+        <hr>           
+        <div class="contacts-top-block">
+            <a class="nav-link" href="tel:+78005002370">8 (800) 500-23-70;</a>
+            <a class="nav-link" href="tel:+74952152244">8 (495) 215-22-44</a>                    
+        </div> -->
+
+    </div>
+
+    <div id="panel" class="panel">
 
         <header id="header">
             <div class="top-line d-none d-lg-block">
@@ -45,7 +128,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-2 col-xl-2">
                             <div class="choice-city-block">
-                                <span>Москва и МО</span>                
+                                <span>Москва и МО</span>
                             </div>
                         </div>
                         <div class="col-lg-2 col-xl-4">
@@ -80,7 +163,7 @@
                 </div>    
             </div>
             
-            <div class="container">
+            <div class="container d-none d-lg-block">
                 <div class="row align-items-center py-4">
                     <div class="col-3 col-lg-2">
                         <a href="/" class="logo">
@@ -92,7 +175,7 @@
                         <form class="form">
                             <div class="input-group border p-1">
                                 <div class="input-group-prepend border-0">
-                                    <button id="button-addon" type="button" class="btn btn-link text-info"><i class="fa fa-search"></i></button>
+                                    <button id="button-addon" type="button" class="btn btn-link text-info"><i class="icon-magnifying-glass"></i></button>
                                 </div>
                                 <input type="search" placeholder="Искать..." aria-describedby="button-addon" class="form-control bg-none border-0">
                             </div>
@@ -123,7 +206,7 @@
                 </div>
             </div>
             
-            <div class="container">
+            <div class="container d-none d-lg-block">
                 <div class="row">
                     <div class="col-12">
                         <ul class="nav nav-fill" id="main-menu">
@@ -131,32 +214,32 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown-catalog-button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-bars"></i> Каталог игрушек
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><!--  show -->
-                                    <a class="dropdown-item" href="#">Конструкторы LEGO</a>
-                                    <a class="dropdown-item" href="#">Электромобили</a>
-                                    <a class="dropdown-item" href="#">Отдых и спорт</a>
-                                    <a class="dropdown-item" href="#">Бластеры Нерф</a>
-            <!-- 
-                                    <a class="dropdown-item dropdown dropdown-toggle" href="#" id="dropdown-catalog-button1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Игровые наборы</a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Минифигурки</a>
-                                            <a class="dropdown-item" href="#">Динозавры</a>
-                                            <a class="dropdown-item" href="#">Трансформеры</a>     
-                                        </div> -->
-            
-                                    <a class="dropdown-item" href="#">Игрушки для малышей</a>
-                                    <a class="dropdown-item" href="#">Интерактивные игрушки</a>
-                                    <a class="dropdown-item" href="#">Конструкторы</a>
-                                    <a class="dropdown-item" href="#">Куклы и аксессуары</a>
-                                    <a class="dropdown-item" href="#">Мягкие игрушки</a>
-                                    <a class="dropdown-item" href="#">Настольные игры</a>
-                                    <a class="dropdown-item" href="#">Радиоуправляемые модели</a>
-                                    <a class="dropdown-item" href="#">Развивающие игры и хобби</a>
-                                    <a class="dropdown-item" href="#">Транспорт</a>
-                                    <a class="dropdown-item" href="#">Всё для праздника</a>
-                                    <a class="dropdown-item" href="#">Косметика и аксессуары</a>
-                                    <a class="dropdown-item" href="#">Распродажа игрушек</a>
-                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><!--  show  -->
+                                    <li><a class="dropdown-item" href="#">Конструкторы LEGO</a></li>
+                                    <li><a class="dropdown-item" href="#">Электромобили</a></li>
+                                    <li><a class="dropdown-item" href="#">Отдых и спорт</a></li>
+                                    <li><a class="dropdown-item" href="#">Бластеры Нерф</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Игровые наборы</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Минифигурки</a></li>
+                                            <li><a class="dropdown-item" href="#">Динозавры</a></li>
+                                            <li><a class="dropdown-item" href="#">Трансформеры</a></li>     
+                                        </ul>                                               
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Игрушки для малышей</a></li>
+                                    <li><a class="dropdown-item" href="#">Интерактивные игрушки</a></li>
+                                    <li><a class="dropdown-item" href="#">Конструкторы</a></li>
+                                    <li><a class="dropdown-item" href="#">Куклы и аксессуары</a></li>
+                                    <li><a class="dropdown-item" href="#">Мягкие игрушки</a></li>
+                                    <li><a class="dropdown-item" href="#">Настольные игры</a></li>
+                                    <li><a class="dropdown-item" href="#">Радиоуправляемые модели</a></li>
+                                    <li><a class="dropdown-item" href="#">Развивающие игры и хобби</a></li>
+                                    <li><a class="dropdown-item" href="#">Транспорт</a></li>
+                                    <li><a class="dropdown-item" href="#">Всё для праздника</a></li>
+                                    <li><a class="dropdown-item" href="#">Косметика и аксессуары</a></li>
+                                    <li><a class="dropdown-item" href="#">Распродажа игрушек</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Мальчики</a>
@@ -180,53 +263,7 @@
                                 <a class="nav-link" href="#">Распродажа</a>
                             </li>
                         </ul> 
-            <!-- 
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
             
-                            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                                
-                                <ul class="navbar-nav mr-auto">
-            
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Мальчики</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Девочки</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Возраст</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Бренды</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Персонажи</a>
-                                    </li>
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Акции</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Распродажа</a>
-                                    </li>
-            
-                                </ul>
-            
-                            </div>
-                        </nav>
-            -->
                     </div>
                 </div>
             </div>
@@ -308,23 +345,23 @@
                                 </div>                                
                             </div>
                             <div class="col-12">
-                                <ul class="nav justify-content-between" id="mainpage-age-menu">
-                                    <li class="nav-item">
+                                <ul class="row nav justify-content-between text-center" id="mainpage-age-menu">
+                                    <li class="col-6 col-sm-4 nav-item">
                                         <a class="nav-link" href="#">0-1 год</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="col-6 col-sm-4 nav-item">
                                         <a class="nav-link" href="#">2-3 года</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="col-6 col-sm-4 nav-item">
                                         <a class="nav-link" href="#">4-5 лет</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="col-6 col-sm-4 nav-item">
                                         <a class="nav-link" href="#">6-8 лет</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="col-6 col-sm-4 nav-item">
                                         <a class="nav-link" href="#">9-12 лет</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="col-6 col-sm-4 nav-item">
                                         <a class="nav-link" href="#">12+ лет</a>
                                     </li>
                                 </ul>                                 
@@ -426,22 +463,22 @@
 
                         <div class="brand-slider" data-slideout-ignore>
                             <a href="#">
-                                <img class="img-fluid" src="img/brand_01.png" alt="char1">
+                                <img class="img-fluid" src="img/brand_01.png" alt="">
                             </a>
                             <a href="#">
-                                <img class="img-fluid" src="img/brand_02.png" alt="char1">
+                                <img class="img-fluid" src="img/brand_02.png" alt="">
                             </a>
                             <a href="#">
-                                <img class="img-fluid" src="img/brand_03.png" alt="char1">
+                                <img class="img-fluid" src="img/brand_03.png" alt="">
                             </a>
                             <a href="#">
-                                <img class="img-fluid" src="img/brand_01.png" alt="char1">
+                                <img class="img-fluid" src="img/brand_04.png" alt="">
                             </a>
                             <a href="#">
-                                <img class="img-fluid" src="img/brand_02.png" alt="char1">
+                                <img class="img-fluid" src="img/brand_05.png" alt="">
                             </a>
                             <a href="#">
-                                <img class="img-fluid" src="img/brand_03.png" alt="char1">
+                                <img class="img-fluid" src="img/brand_06.png" alt="">
                             </a>
                         </div>                        
                     </div>
@@ -469,7 +506,7 @@
                         <div class="tab-content" id="top-goods-content">
                             <div class="tab-pane fade show active" id="new-items" role="tabpanel" aria-labelledby="new-items-tab">
                                 <div class="row">
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -480,27 +517,28 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -511,27 +549,28 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -542,27 +581,28 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -573,23 +613,24 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -598,7 +639,7 @@
                             </div>
                             <div class="tab-pane fade" id="bestseller" role="tabpanel" aria-labelledby="bestseller-tab">
                                 <div class="row">
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -609,27 +650,28 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -640,23 +682,24 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -664,7 +707,7 @@
                             </div>
                             <div class="tab-pane fade" id="best-price" role="tabpanel" aria-labelledby="best-price-tab">
                                 <div class="row">
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -675,27 +718,28 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -706,23 +750,24 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -730,7 +775,7 @@
                             </div>
                             <div class="tab-pane fade" id="new-lego" role="tabpanel" aria-labelledby="new-lego-tab">
                                 <div class="row">
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -741,27 +786,28 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card product-preview">
                                             <a href="#"><img src="../img/product_01.jpg" class="card-img-top" alt="alt"></a> 
                                             <div class="card-body">
@@ -772,23 +818,24 @@
                                                             <span class="discount-price">1399 р.</span>
                                                             <span class="discount-percent">-30%</span>
                                                         </div>    
-                                                    </div>
-                                                    <div class="col-6 text-right">
-                                                        <a href="#" class="btn-buy"><i class="fas fa-shopping-cart"></i></a>
-                                                        <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
-                                                    </div>             
+                                                    </div> 
                                                 </div>
                                                 <a href="#" class="card-title">L.O.L. Surprise 556244 Мини кукла или питомец</a>
                                             </div>
                                             <div class="card-footer">
-                                                <span class="stars-rating">
+                                                <!-- <span class="stars-rating">
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="fas fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </span>
-                                                <span class="num-vote">17</span>
+                                                <span class="num-vote">17</span> -->
+                                                <div class="text-right">
+                                                    <a href="#" class="btn btn-buy">В корзину</a>
+                                                    <a href="#" class="btn-favorite ml-2"><i class="far fa-heart"></i></a>
+                                                </div> 
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -917,6 +964,9 @@
             <div class="description-block my-4">
                 <div class="container">
                     <div class="row py-5">
+                        <div class="col-12">
+                            <span>Подпишитесь на рассылку и получайте дополнительные скидки!</span>
+                        </div>
                         <div class="col-12 col-sm-6 col-lg-3">
                             <input class="form-control" type="text">
                         </div>
@@ -939,7 +989,7 @@
         <footer id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-none d-sm-block col-sm-6 col-lg-3">
                         <i class="icon-profile" style="font-size: 2rem"></i>
                         <ul class="nav flex-column footer-menu">
                             <a class="nav-link" href="#">Личный кабинет</a>
@@ -951,7 +1001,7 @@
                             <a class="nav-link" href="#">Интерактивные игрушки</a>
                         </ul>            
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-none d-sm-block col-sm-6 col-lg-3">
                         <i class="icon-info" style="font-size: 2rem"></i>
                         <ul class="nav flex-column footer-menu">
                             <a class="nav-link" href="#">Благотворительный проект</a>
@@ -964,7 +1014,7 @@
                             <a class="nav-link" href="#">Обзоры</a>
                         </ul>            
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-none d-sm-block col-sm-6 col-lg-3">
                         <i class="icon-list" style="font-size: 2rem"></i>            
                         <ul class="nav flex-column footer-menu">
                             <a class="nav-link" href="#">Доставка</a>
@@ -981,7 +1031,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <i class="icon-share" style="font-size: 2rem"></i>                
                         <div class="contacts-bottom-block">
-                            <a href="tel:+78005002370">8 (800) 500-23-70;</a>
+                            <a href="tel:+78005002370">8 (800) 500-23-70</a>
                             <a href="tel:+74952152244">8 (495) 215-22-44</a>                    
                         </div>
                         <div class="social-block">
@@ -990,13 +1040,13 @@
                             <a href="#" class="icon-odnoklassniki-logo"></a>
                             <a href="#" class="icon-youtube"></a>
                         </div>
-                        <div class="payment-block d-flex justify-content-between">
+                        <div class="payment-block">
                             <img src="../img/visa.svg" alt="">
                             <img src="../img/mastercard.svg" alt="">
                             <img src="../img/yandex-pay-logo.svg" alt="">
                             <img src="../img/webmoney-paying-logo.svg" alt="">
                         </div>
-                        <div class="awards-block d-flex justify-content-around">
+                        <div class="awards-block d-flex justify-content-center">
                             <img src="../img/nagrada 1.svg" alt="">
                             <img src="../img/nagrada 2.svg" alt="">
                         </div>
