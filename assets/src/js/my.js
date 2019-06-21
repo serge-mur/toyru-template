@@ -23,16 +23,46 @@ slideout
         this.panel.removeEventListener('click', close);
     });
 // Toggle button
+document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+});
+
+/* 
 $('.toggle-button').on('click', function () {
     slideout.toggle();
 });
-/* 
+
+var fixed = document.querySelector('.fixed-header');
+
+slideout.on('translate', function (translated) {
+    fixed.style.transform = 'translateX(' + translated + 'px)';
+});
+
+slideout.on('beforeopen', function () {
+    fixed.style.transition = 'transform 300ms ease';
+    fixed.style.transform = 'translateX(256px)';
+});
+
+slideout.on('beforeclose', function () {
+    fixed.style.transition = 'transform 300ms ease';
+    fixed.style.transform = 'translateX(0px)';
+});
+
+slideout.on('open', function () {
+    fixed.style.transition = '';
+});
+
+slideout.on('close', function () {
+    fixed.style.transition = '';
+});
+ */
+
 var fixed = document.getElementById('mobile-icon-menu');
 fixed.addEventListener('touchmove', function(e) {
     e.preventDefault();
 }, false);
 
- */
+
 // Dropdown menu
 $(".btn-group, .dropdown").hover(
     function () {
@@ -111,7 +141,7 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            }        
+            }
         ]
     });
 

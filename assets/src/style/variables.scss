@@ -14,7 +14,7 @@ $toy-light-gray: #f6f6f6;
 $toy-other-gray: #e8e8e8;
 
 $primary: $toy-dark-orange;
-$secondary: $toy-orange;
+$secondary: $toy-dark-blue;
 
 // options
 $enable-responsive-font-sizes: true;
@@ -41,4 +41,5 @@ $border-radius: 5px;
 $border-color: $toy-gray;
 
 // forms
+$input-btn-padding-y: .75rem;
 $input-focus-border-color: $toy-dark-blue;

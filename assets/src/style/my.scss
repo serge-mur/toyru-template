@@ -37,6 +37,7 @@
     background-color: #fff;
     border-bottom: 1px solid $toy-light-gray;
     z-index: 1030;
+    backface-visibility: hidden;
     .nav-link {
         color: $toy-gray;  
         padding: .5rem .1rem;      
@@ -114,6 +115,28 @@ body {
     width: 100%;
     background-color: rgba(0,0,0,.125);
     z-index: 99;
+}
+
+#accordion-nav {
+    .card {
+        border: none;
+        .card-header {
+            .card-link {
+                display: block;
+                font-size: 1.25rem;
+                color: $toy-dark-gray;
+            }
+        }
+        .card-body {
+            .nav {
+                .nav-link {
+                    font-size: 0.875rem;
+                    color: $toy-dark-gray;
+                    line-height: 1;
+                }
+            }
+        }
+    }
 }
 
 
@@ -476,7 +499,19 @@ body {
 }
 
 .description-block {
-    background-image: url(../img/descr_back.jpg);
+    background: url(../img/descr_back.png) no-repeat;
+    background-size: cover;
+    .text-block {
+        // font-size: 1.5rem;
+        @include font-size(1.5rem);
+        line-height: 1;
+        color: $toy-dark-gray;
+    }
+    .btn {
+        color: #fff;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+    }
 }
 
 .news-block {

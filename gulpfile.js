@@ -61,7 +61,8 @@ var gulp = require('gulp'),  // подключаем Gulp
     jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
     pngquant = require('imagemin-pngquant'), // плагин для сжатия png
     rimraf = require('gulp-rimraf'), // плагин для удаления файлов и каталогов
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    rep = require('gulp-replace-image-src'); // плагин для изм. путей к картинкам в template
 
 /* задачи */
 
@@ -76,6 +77,13 @@ gulp.task('html:build', function () {
         .pipe(plumber()) // отслеживание ошибок
         .pipe(rigger()) // импорт вложений
         .pipe(gulp.dest(path.build.html)) // выкладывание готовых файлов
+
+        // .pipe(rep({
+        //     prependSrc : 'img',
+        //     keepOrigin : false
+        //   }))
+        //   .pipe(gulp.dest('path.build.html'))
+
         .pipe(webserver.reload({ stream: true })); // перезагрузка сервера
 });
 
