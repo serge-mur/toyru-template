@@ -13,6 +13,26 @@
         <li><a href=""></a></li>
         <li><a href=""></a></li> -->
     </ul>
+
+    <script>
+        function isTouchDevice(){
+            return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+        }
+        if (isTouchDevice()) {
+            console.log('isTouchDevice');
+            var x = document.querySelectorAll("a");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+                x[i].style.padding = "15px 0";
+                x[i].style.fontSize = "45px";
+            }
+        }
+        else {
+            console.log('noTouchDevice');        
+        }
+    </script>
+    
 </body>
 
 </html>

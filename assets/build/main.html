@@ -17,7 +17,7 @@
             <i class="icon-menu-options"></i>
             <div>Каталог</div>
         </a>  
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#search">
             <i class="icon-magnifying-glass"></i>
             <div>Поиск</div>
         </a>
@@ -32,7 +32,7 @@
             <i class="icon-shopping-cart"></i>
             <div>Корзина</div>
         </a>
-    </nav>                 
+    </nav>                           
     
     <div id="offcanvas-menu">
     
@@ -118,88 +118,86 @@
         </div> -->
     
     </div>
+    
+    <div id="search">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="type keyword(s) here" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
 
     <div id="panel" class="panel">
 
         <header id="header">
             <div class="top-line d-none d-lg-block">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-2 col-xl-2">
-                            <div class="choice-city-block">
-                                <span>Москва и МО</span>
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-between">
+                            <div class="left-block d-flex">
+                                
+                                <a class="choice-city-block" href="#">Москва и МО</a>                
+            
+                                <div class="contacts-top-block">
+                                    <a href="tel:+78005002370">8 (800) 500-23-70</a>
+                                    <a href="tel:+74952152244">8 (495) 215-22-44</a>
+                                    <a class="feedback-link" href="#">Обратный звонок</a>
+                                </div>          
                             </div>
-                        </div>
-                        <div class="col-lg-2 col-xl-4">
-                            <div class="contacts-top-block">
-                                <a href="tel:+78005002370">8 (800) 500-23-70;</a>
-                                <a href="tel:+74952152244">8 (495) 215-22-44</a>                    
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-xl-6">
-                            <ul class="nav justify-content-end" id="top-menu">
-                                <li class="nav-item">
+                            <div class="right-block">
+                                <div class="nav" id="top-menu">
                                     <a class="nav-link" href="#">О компании</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Обратная связь</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Оптовикам</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Оплата</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Доставка</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Магазины</a>
-                                </li>
-                            </ul>            
+                                </div>            
+                            </div>                
                         </div>
+            
+            
                     </div>
                 </div>    
             </div>
             
             <div class="container d-none d-lg-block">
-                <div class="row align-items-center py-4">
+                <div class="row align-items-center py-3">
                     <div class="col-3 col-lg-2">
                         <a href="/" class="logo">
                             <img src="img/logo_toyru.svg" alt="Интернет магазин игрушек Toy.ru">
-                            <!-- <img src="img/logo.png" alt="Интернет магазин игрушек Toy.ru"> -->
                         </a>
                     </div>
-                    <div class="col-6 col-lg-3">
-                        <form class="form">
-                            <div class="input-group border p-1">
+                    <div class="col-lg-3 col-xl-4">
+                        <form class="form" id="top-search">
+                            <div class="input-group">
                                 <div class="input-group-prepend border-0">
-                                    <button id="button-addon" type="button" class="btn btn-link text-info"><i class="icon-magnifying-glass"></i></button>
+                                    <button class="btn text-info"><i class="icon-magnifying-glass"></i></button>
                                 </div>
-                                <input type="search" placeholder="Искать..." aria-describedby="button-addon" class="form-control bg-none border-0">
+                                <input type="search" placeholder="Искать..." class="form-control bg-none border-0">
                             </div>
                         </form>
                     </div>
-                    <div class="d-none d-lg-block col-lg-5">
-                        <ul class="nav flex-nowrap p-2" id="top-icon-menu">
-                            <li class="nav-item d-flex align-items-center">
-                                <i class="icon-delivery-truck" style="font-size: 3rem"></i>
-                                <a class="nav-link" href="#">Бесплатная доставка</a>
+                    <div class="col-lg-5 col-xl-4">
+                        <div class="d-flex flex-nowrap px-2 py-3" id="top-icon-menu">
+                            <a href="#" class="d-flex">
+                                <i class="icon-delivery-truck"></i>
+                                <span>Бесплатная доставка</span>
+                            </a>
+                            <a href="#" class="d-flex">
+                                <i class="icon-startup"></i>
+                                <span>Срочная доставка</span>
                             </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class="icon-startup" style="font-size: 3rem"></i>
-                                <a class="nav-link" href="#">Срочная доставка</a>
+                            <a href="#" class="d-flex">
+                                <i class="icon-discount-voucher"></i>
+                                <span>Гарантия лучшей цены</span>
                             </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class="icon-discount-voucher" style="font-size: 3rem"></i>
-                                <a class="nav-link" href="#">Гарантия лучшей цены</a>
-                            </li>
-                        </ul>  
+                        </div>  
                     </div>
-                    <div class="col-3 col-lg-2">
-                        <div class="nav flex-column">
-                            <a class="nav-link" href="#"><i class="icon-profile"></i> Мой кабинет</a>
-                            <a class="nav-link" href="#"><i class="icon-shopping-cart"></i> Корзина</a>
+                    <div class="col-lg-2">
+                        <div id="top-user">
+                            <a href="#"><i class="icon-profile"></i> Мой&nbsp;кабинет</a>
+                            <a href="#"><i class="icon-shopping-cart"></i> Корзина</a>
                         </div>
                     </div>
                 </div>
@@ -211,9 +209,9 @@
                         <ul class="nav nav-fill" id="main-menu">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown-catalog-button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-bars"></i> Каталог игрушек
+                                    <i class="icon-menu-options"></i> Каталог игрушек
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><!--  show  -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Конструкторы LEGO</a></li>
                                     <li><a class="dropdown-item" href="#">Электромобили</a></li>
                                     <li><a class="dropdown-item" href="#">Отдых и спорт</a></li>
@@ -234,7 +232,15 @@
                                     <li><a class="dropdown-item" href="#">Настольные игры</a></li>
                                     <li><a class="dropdown-item" href="#">Радиоуправляемые модели</a></li>
                                     <li><a class="dropdown-item" href="#">Развивающие игры и хобби</a></li>
-                                    <li><a class="dropdown-item" href="#">Транспорт</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Транспорт</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Автотреки и машинки Hot Wheels</a></li>
+                                            <li><a class="dropdown-item" href="#">Коллекционные машинки</a></li>
+                                            <li><a class="dropdown-item" href="#">Летательные аппараты</a></li>     
+                                            <li><a class="dropdown-item" href="#">Железные дороги и паравозики</a></li>     
+                                        </ul>                              
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Всё для праздника</a></li>
                                     <li><a class="dropdown-item" href="#">Косметика и аксессуары</a></li>
                                     <li><a class="dropdown-item" href="#">Распродажа игрушек</a></li>
@@ -272,16 +278,16 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="d-none d-lg-block col-lg-3">
-                        <ul class="nav flex-column" id="mainpage-catalog-menu">
+                    <div class="d-none d-xl-block col-xl-3">
+                        <ul class="nav flex-column my-4" id="mainpage-catalog-menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Конструкторы LEGO</a>
+                                <a class="nav-link" href="#">Топ 50 товаров</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Электромобили</a>
+                                <a class="nav-link" href="#">Всё LEGO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Отдых и спорт</a>
+                                <a class="nav-link" href="#">Что то еще</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Бластеры Нерф</a>
@@ -307,6 +313,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Настольные игры</a>
                             </li>
+<!--                                 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Радиоуправляемые модели</a>
                             </li>
@@ -324,49 +331,62 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Распродажа игрушек</a>
-                            </li>
+                            </li> -->
                         </ul>
+                        <div class="text-center">
+                            <a class="orange-link" href="#">Перейти в каталог</a>                            
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-
+                    <div class="col-12 col-lg-8 col-xl-6">
                         <div class="row">
                             <div class="col-12">
                                 <div class="main-slider my-4" data-slideout-ignore>
                                     <a href="#">
-                                        <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
+                                        <img src="img/banners/720x360-lol-doll.jpg" class="img-fluid" alt="alt">
                                     </a>
                                     <a href="#">
-                                        <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
+                                        <img src="img/banners/720x360-lego.jpg" class="img-fluid" alt="alt">
                                     </a>
                                     <a href="#">
-                                        <img src="img/slide_01.jpg" class="img-fluid" alt="alt">
+                                        <img src="img/banners/720x360-draw.jpg" class="img-fluid" alt="alt">
                                     </a>
                                 </div>                                
                             </div>
+
                             <div class="col-12">
                                 <ul class="row nav justify-content-between text-center" id="mainpage-age-menu">
-                                    <li class="col-6 col-sm-4 nav-item">
+                                    <li class="col-6 col-sm-4 col-lg-2 col-xl-4 nav-item">
                                         <a class="nav-link" href="#">0-1 год</a>
                                     </li>
-                                    <li class="col-6 col-sm-4 nav-item">
+                                    <li class="col-6 col-sm-4 col-lg-2 col-xl-4 nav-item">
                                         <a class="nav-link" href="#">2-3 года</a>
                                     </li>
-                                    <li class="col-6 col-sm-4 nav-item">
+                                    <li class="col-6 col-sm-4 col-lg-2 col-xl-4 nav-item">
                                         <a class="nav-link" href="#">4-5 лет</a>
                                     </li>
-                                    <li class="col-6 col-sm-4 nav-item">
+                                    <li class="col-6 col-sm-4 col-lg-2 col-xl-4 nav-item">
                                         <a class="nav-link" href="#">6-8 лет</a>
                                     </li>
-                                    <li class="col-6 col-sm-4 nav-item">
+                                    <li class="col-6 col-sm-4 col-lg-2 col-xl-4 nav-item">
                                         <a class="nav-link" href="#">9-12 лет</a>
                                     </li>
-                                    <li class="col-6 col-sm-4 nav-item">
+                                    <li class="col-6 col-sm-4 col-lg-2 col-xl-4 nav-item">
                                         <a class="nav-link" href="#">12+ лет</a>
                                     </li>
                                 </ul>                                 
                             </div>
+                            
+                            <!-- <div class="col-12">
+                                <div class="d-flex justify-content-between flex-wrap text-center" id="mainpage-age-menu-test">
+                                    <a href="#">0-1 год</a>
+                                    <a href="#">2-3 года</a>
+                                    <a href="#">4-5 лет</a>
+                                    <a href="#">6-8 лет</a>
+                                    <a href="#">9-12 лет</a>
+                                    <a href="#">12+ лет</a>
+                                </div>                                 
+                            </div> -->
                             <div class="col-12">
-
                                 <div class="row my-4">
                                     <a href="#" class="col-4">
                                         <img src="img/lol_doll.png" class="img-fluid" alt="">
@@ -378,17 +398,15 @@
                                         <img src="img/transformer.png" class="img-fluid" alt="">                                        
                                     </a>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="gift-picking-block my-4 p-2">
+                    <div class="col-12 col-lg-4 col-xl-3">
+                        <div class="my-4 p-3" id="gift-picking-block">
                             <h3>Подбор подарка</h3>
-                            <a class="d-block" href="#">Как выбрать подарок?</a>                            
+                            <a class="gray-link" href="#">Как выбрать подарок?</a>                            
                             <form>
-                                <div class="form-group gender-choice text-right my-4">
+                                <div class="form-group gender-choice my-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="checkbox-girl" value="option1">
                                         <label class="form-check-label" for="checkbox-girl">Девочке</label>
@@ -399,7 +417,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control" id="age-select">
+                                    <select class="form-control form-control-sm" id="age-select">
                                         <option>Выберите возраст</option>
                                         <option>0-1 год</option>
                                         <option>2-3 года</option>
@@ -413,33 +431,36 @@
                                 <div class="form-group">
                                     <label for="inputState">Укажите цену</label>
                                     <div class="row">
-                                        <div class="col-6 pr-1">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
+                                        <div class="col-6">
+                                            <div>от</div>
+                                            <div class="input-group input-group-sm">
+                                                <!-- <div class="input-group-prepend">
                                                     <span class="input-group-text">от</span>
-                                                </div>                             
+                                                </div> -->
                                                 <input type="text" class="form-control">
                                                 <div class="input-group-append">
-                                                    <span class="input-group-text"><i class="fa fa-rub"></i></span>
+                                                    <span class="input-group-text">р.</span>
                                                 </div>                                         
                                             </div>
                                         </div>
-                                        <div class="col-6 pl-1">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
+                                        <div class="col-6">
+                                            <div>до</div>
+                                            <div class="input-group input-group-sm">
+                                                <!-- <div class="input-group-prepend">
                                                     <span class="input-group-text">до</span>
-                                                </div>                             
+                                                </div>                              -->
                                                 <input type="text" class="form-control">
                                                 <div class="input-group-append">
-                                                    <span class="input-group-text"><i class="fa fa-rub"></i></span>
+                                                    <span class="input-group-text">р.</span>
                                                 </div>                                         
                                             </div>                        
                                         </div>                    
                                     </div>
+                                    <input type="range" class="form-control-range my-4" id="formControlRange" data-slideout-ignore>
                                 </div>                              
 
                                 <div class="form-group">
-                                    <select class="form-control" id="category-select">
+                                    <select class="form-control form-control-sm" id="category-select">
                                         <option>Выберите категорию</option>
                                         <option>Конструкторы LEGO</option>
                                         <option>Электромобили</option>
@@ -450,13 +471,12 @@
                                     </select>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-6">Товары: 4485</div>
-                                    <div class="col-6">
-                                        <button class="btn btn-secondary">Показать</button>
+                                <div class="row align-items-center">
+                                    <div class="col-6">Товары: <span>4485</span></div>
+                                    <div class="col-6 text-right">
+                                        <button class="btn btn-primary text-uppercase btn-sm">Показать</button>
                                     </div>
                                 </div>
-
                             </form>                        
                         </div>
 
@@ -487,20 +507,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul class="nav nav-pills my-4" id="top-goods-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="new-items-tab" data-toggle="tab" href="#new-items" role="tab" aria-controls="new-items" aria-selected="true">Новинки</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="bestseller-tab" data-toggle="tab" href="#bestseller" role="tab" aria-controls="bestseller" aria-selected="false">Хит продаж</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="best-price-tab" data-toggle="tab" href="#best-price" role="tab" aria-controls="best-price" aria-selected="false">Лучшая цена</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="new-lego-tab" data-toggle="tab" href="#new-lego" role="tab" aria-controls="new-lego" aria-selected="false">Новинки LEGO</a>
-                            </li>
-                        </ul>
+                        <div class="nav nav-pills my-4 row" id="top-goods-tab" role="tablist">
+                            <a class="nav-link active col-6 col-sm-auto" id="new-items-tab" data-toggle="tab" href="#new-items" role="tab" aria-controls="new-items" aria-selected="true">Новинки</a>
+                            <a class="nav-link col-6 col-sm-auto" id="bestseller-tab" data-toggle="tab" href="#bestseller" role="tab" aria-controls="bestseller" aria-selected="false">Хит продаж</a>
+                            <a class="nav-link col-6 col-sm-auto" id="best-price-tab" data-toggle="tab" href="#best-price" role="tab" aria-controls="best-price" aria-selected="false">Лучшая цена</a>
+                            <a class="nav-link col-6 col-sm-auto" id="new-lego-tab" data-toggle="tab" href="#new-lego" role="tab" aria-controls="new-lego" aria-selected="false">Новинки LEGO</a>
+                        </div>
 
                         <div class="tab-content" id="top-goods-content">
                             <div class="tab-pane fade show active" id="new-items" role="tabpanel" aria-labelledby="new-items-tab">
@@ -887,17 +899,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul class="nav nav-pills mb-4" id="news-content-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true">Новости</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Обзоры</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Видео</a>
-                            </li>
-                        </ul>
+                        <div class="nav nav-pills mb-4 row" id="news-content-tab" role="tablist">
+                            <a class="nav-link active col-auto" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true">Новости</a>
+                            <a class="nav-link col-auto" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Обзоры</a>
+                            <a class="nav-link col-auto" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Видео</a>
+                        </div>
 
                         <div class="tab-content" id="news-content-content">
                             <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
@@ -970,7 +976,7 @@
                             <span class="text-block">Подпишитесь на рассылку и получайте дополнительные скидки!</span>
                         </div>
                         <div class="col-12 col-lg-3 mb-2 mb-lg-0">
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" placeholder="E-mail">
                         </div>
                         <div class="col-12 col-lg-3">
                             <button class="btn btn-secondary w-100">Подписаться</button>
@@ -981,8 +987,8 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="d-none d-sm-block col-sm-6 col-lg-3">
-                        <i class="icon-profile" style="font-size: 2rem"></i>
+                    <div class="d-none d-lg-block col-lg-3 bottom-block">
+                        <i class="icon-profile"></i>
                         <ul class="nav flex-column footer-menu">
                             <a class="nav-link" href="#">Личный кабинет</a>
                             <a class="nav-link" href="#">Клуб скидок</a>
@@ -993,8 +999,8 @@
                             <a class="nav-link" href="#">Интерактивные игрушки</a>
                         </ul>            
                     </div>
-                    <div class="d-none d-sm-block col-sm-6 col-lg-3">
-                        <i class="icon-info" style="font-size: 2rem"></i>
+                    <div class="d-none d-lg-block col-lg-3 bottom-block">
+                        <i class="icon-info"></i>
                         <ul class="nav flex-column footer-menu">
                             <a class="nav-link" href="#">Благотворительный проект</a>
                             <a class="nav-link" href="#">О компании</a>
@@ -1006,8 +1012,8 @@
                             <a class="nav-link" href="#">Обзоры</a>
                         </ul>            
                     </div>
-                    <div class="d-none d-sm-block col-sm-6 col-lg-3">
-                        <i class="icon-list" style="font-size: 2rem"></i>            
+                    <div class="d-none d-lg-block col-lg-3 bottom-block">
+                        <i class="icon-list"></i>            
                         <ul class="nav flex-column footer-menu">
                             <a class="nav-link" href="#">Доставка</a>
                             <a class="nav-link" href="#">Оплата</a>
@@ -1020,8 +1026,8 @@
                             <a class="nav-link" href="#">FAQ</a>
                         </ul>            
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <i class="icon-share" style="font-size: 2rem"></i>                
+                    <div class="col-12 col-lg-3 bottom-block text-center text-lg-left">
+                        <i class="icon-share d-none d-lg-block"></i>                
                         <div class="contacts-bottom-block">
                             <a href="tel:+78005002370">8 (800) 500-23-70</a>
                             <a href="tel:+74952152244">8 (495) 215-22-44</a>                    
@@ -1038,7 +1044,7 @@
                             <img src="img/yandex-pay-logo.svg" alt="">
                             <img src="img/webmoney-paying-logo.svg" alt="">
                         </div>
-                        <div class="awards-block d-flex justify-content-center">
+                        <div class="awards-block">
                             <img src="img/nagrada 1.svg" alt="">
                             <img src="img/nagrada 2.svg" alt="">
                         </div>
