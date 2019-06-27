@@ -7698,11 +7698,11 @@ a.text-dark:hover, a.text-dark:focus {
     opacity: 0.75; }
   .slick-prev:before,
   .slick-next:before {
-    font-family: "slick";
+    font-family: 'toy_font';
     font-size: 40px;
     line-height: 1;
-    color: #adadad;
-    opacity: 0.75;
+    color: #e8e8e8;
+    opacity: 0.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
@@ -7712,9 +7712,9 @@ a.text-dark:hover, a.text-dark:focus {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "←"; }
+    content: ""; }
     [dir="rtl"] .slick-prev:before {
-      content: "→"; }
+      content: ""; }
 
 .slick-next {
   right: -40px; }
@@ -7722,9 +7722,9 @@ a.text-dark:hover, a.text-dark:focus {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "→"; }
+    content: ""; }
     [dir="rtl"] .slick-next:before {
-      content: "←"; }
+      content: ""; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -7780,7 +7780,7 @@ a.text-dark:hover, a.text-dark:focus {
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
       color: black;
-      opacity: 0.75; }
+      opacity: 0.7; }
 
 .char-slider, .brand-slider {
   width: calc(100% - 80px);
@@ -7829,7 +7829,7 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 1030;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1); }
   #mobile-icon-menu .nav-link {
     color: #adadad;
     padding: .5rem .1rem; }
@@ -7896,7 +7896,7 @@ body {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 99; }
 
 #accordion-nav .card {
@@ -7907,6 +7907,7 @@ body {
     color: #505050; }
   #accordion-nav .card .card-body .nav .nav-link {
     font-size: 0.875rem;
+    font-size: 1rem;
     color: #505050;
     line-height: 1; }
 
@@ -7920,13 +7921,13 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.5s ease-in-out;
   -webkit-transform: translate(0px, -100%) scale(0, 0);
-  transform: translate(0px, -100%) scale(0, 0);
+          transform: translate(0px, -100%) scale(0, 0);
   opacity: 0;
   z-index: 9999; }
 
 #search.open {
   -webkit-transform: translate(0px, 0px) scale(1, 1);
-  transform: translate(0px, 0px) scale(1, 1);
+          transform: translate(0px, 0px) scale(1, 1);
   opacity: 1; }
 
 #search input[type="search"] {
@@ -7935,7 +7936,7 @@ body {
   width: 100%;
   color: white;
   background: rgba(0, 0, 0, 0);
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 300;
   text-align: center;
   border: 0px;
@@ -7949,16 +7950,15 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 61px;
-  margin-left: -45px; }
+  margin-top: 45px;
+  margin-left: -80px;
+  width: 160px; }
 
 #search .close {
   position: fixed;
   top: 15px;
   right: 15px;
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
   opacity: 1;
   padding: 10px 17px;
   font-size: 27px; }
@@ -8124,6 +8124,10 @@ body {
       .product-preview .card-footer .btn-buy:hover {
         background-color: #f15922;
         color: #fff; }
+  .product-preview .badges-block {
+    position: absolute;
+    left: 0;
+    top: 0; }
 
 /* footer */
 #footer .bottom-block i {
@@ -8159,23 +8163,29 @@ body {
     padding-right: .5rem;
     color: #adadad; }
     #footer .bottom-block .social-block a:hover {
-      color: #f15922;
       text-decoration: none; }
+    #footer .bottom-block .social-block a.icon-vk-social-logotype:hover {
+      color: #5181b8; }
+    #footer .bottom-block .social-block a.icon-facebook-logo-button:hover {
+      color: #3b5998; }
+    #footer .bottom-block .social-block a.icon-odnoklassniki-logo:hover {
+      color: #ff8400; }
+    #footer .bottom-block .social-block a.icon-youtube:hover {
+      color: #ea0000; }
+    #footer .bottom-block .social-block a.icon-instagram-logo:hover {
+      color: #ff3870; }
 
 #footer .bottom-block .payment-block {
-  margin: 1rem .5rem; }
+  display: inline-block;
+  width: 195px; }
   #footer .bottom-block .payment-block img {
-    height: 30px;
-    margin-right: .2rem; }
+    margin: 0 .1rem; }
 
 #footer .bottom-block .awards-block {
   margin: 1rem .5rem; }
-  #footer .bottom-block .awards-block img {
-    width: 57px;
-    height: 86px;
-    margin-right: 1rem; }
 
 .copyright-block {
+  font-size: 1rem;
   color: #adadad; }
 
 /* main page */
@@ -8283,6 +8293,7 @@ body {
     text-transform: uppercase; }
 
 .news-block .news-item {
+  display: block;
   margin-bottom: 2rem; }
   .news-block .news-item .date {
     display: inline-block;
@@ -8298,6 +8309,11 @@ body {
     font-weight: bold; }
   .news-block .news-item p {
     color: #adadad; }
+  .news-block .news-item:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .news-block .news-item:hover h5 {
+    text-decoration: underline; }
 
 /* other css */
 .orange-link {
@@ -8344,12 +8360,15 @@ body {
 
 @media (max-width: 767.98px) {
   .nav-pills .nav-link {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .copyright-block {
+    font-size: 0.75rem;
+    color: #adadad; } }
 
 @font-face {
   font-family: 'toy_font';
-  src: url("../fonts/toy_font.eot?r0v3qg");
-  src: url("../fonts/toy_font.eot?r0v3qg#iefix") format("embedded-opentype"), url("../fonts/toy_font.ttf?r0v3qg") format("truetype"), url("../fonts/toy_font.woff?r0v3qg") format("woff"), url("../fonts/toy_font.svg?r0v3qg#toy_font") format("svg");
+  src: url("../fonts/toy_font.eot?l96bez");
+  src: url("../fonts/toy_font.eot?l96bez#iefix") format("embedded-opentype"), url("../fonts/toy_font.ttf?l96bez") format("truetype"), url("../fonts/toy_font.woff?l96bez") format("woff"), url("../fonts/toy_font.svg?l96bez#toy_font") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -8431,3 +8450,12 @@ body {
 
 .icon-list:before {
   content: "\e915"; }
+
+.icon-arrow_left:before {
+  content: "\e916"; }
+
+.icon-arrow_right:before {
+  content: "\e917"; }
+
+.icon-instagram-logo:before {
+  content: "\e918"; }

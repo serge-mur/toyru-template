@@ -33,7 +33,7 @@
     border-bottom: 1px solid $toy-light-gray;
     z-index: 1030;
     backface-visibility: hidden;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
     .nav-link {
         color: $toy-gray;  
         padding: .5rem .1rem;      
@@ -109,7 +109,7 @@ body {
     top: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.7);
     z-index: 99;
 }
 
@@ -127,6 +127,7 @@ body {
             .nav {
                 .nav-link {
                     font-size: 0.875rem;
+                    font-size: 1rem;
                     color: $toy-dark-gray;
                     line-height: 1;
                 }
@@ -143,40 +144,22 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    
-    -webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-
-    -webkit-transform: translate(0px, -100%) scale(0, 0);
-	-moz-transform: translate(0px, -100%) scale(0, 0);
-	-o-transform: translate(0px, -100%) scale(0, 0);
-	-ms-transform: translate(0px, -100%) scale(0, 0);
 	transform: translate(0px, -100%) scale(0, 0);
-    
     opacity: 0;
-
     z-index: 9999;
 }
-
 #search.open {
-    -webkit-transform: translate(0px, 0px) scale(1, 1);
-    -moz-transform: translate(0px, 0px) scale(1, 1);
-	-o-transform: translate(0px, 0px) scale(1, 1);
-	-ms-transform: translate(0px, 0px) scale(1, 1);
 	transform: translate(0px, 0px) scale(1, 1); 
     opacity: 1;
 }
-
 #search input[type="search"] {
     position: absolute;
     top: 50%;
     width: 100%;
     color: rgb(255, 255, 255);
     background: rgba(0, 0, 0, 0);
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
     border: 0px;
@@ -190,22 +173,19 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 61px;
-    margin-left: -45px;
+    margin-top: 45px;
+    margin-left: -80px;
+    width: 160px;
 }
 #search .close {
     position: fixed;
     top: 15px;
     right: 15px;
     color: #fff;
-	background-color: #428bca;
-	border-color: #357ebd;
 	opacity: 1;
 	padding: 10px 17px;
 	font-size: 27px;
 }
-
-
 
 /* header */
 .top-line {
@@ -427,6 +407,11 @@ body {
             }
         }
     }
+    .badges-block {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
 /* footer */
@@ -469,30 +454,40 @@ body {
                 padding-right: .5rem;
                 color: $toy-gray;
                 &:hover {
-                    color: $toy-dark-orange;
                     text-decoration: none;
+                }
+                &.icon-vk-social-logotype:hover {
+                    color: #5181b8;
+                }
+                &.icon-facebook-logo-button:hover {
+                    color: #3b5998;
+                }
+                &.icon-odnoklassniki-logo:hover {
+                    color: #ff8400;
+                }
+                &.icon-youtube:hover {
+                    color: #ea0000;
+                }
+                &.icon-instagram-logo:hover {
+                    color: #ff3870;
                 }
             }
         }
         .payment-block {
-            margin: 1rem .5rem;            
+            display: inline-block;
+            width: 195px;
             img {
-                height: 30px;
-                margin-right: .2rem;
+                margin: 0 .1rem;
             }
         }
         .awards-block {
-            margin: 1rem .5rem;            
-            img {
-                width: 57px;
-                height: 86px;
-                margin-right: 1rem;
-            }
+            margin: 1rem .5rem;
         }              
     }
 }
 
 .copyright-block {
+    font-size: 1rem;
     color: $toy-gray;
 }
 
@@ -641,6 +636,7 @@ body {
 
 .news-block {
     .news-item {
+        display: block;
         margin-bottom: 2rem;
         .date {
             display: inline-block;
@@ -658,6 +654,13 @@ body {
         }
         p {
             color: $toy-gray;
+        }
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        &:hover h5 {
+            text-decoration: underline;
         }
     }
 }
@@ -728,6 +731,10 @@ body {
             font-size: 1rem;
         }
     }
+    .copyright-block {
+        font-size: 0.75rem;
+        color: $toy-gray;
+    }
 }
 
 @include media-breakpoint-between(sm, md) {
@@ -735,13 +742,13 @@ body {
 }
 
 // icons system
-@font-face {
+  @font-face {
     font-family: 'toy_font';
-    src:  url('../fonts/toy_font.eot?r0v3qg');
-    src:  url('../fonts/toy_font.eot?r0v3qg#iefix') format('embedded-opentype'),
-      url('../fonts/toy_font.ttf?r0v3qg') format('truetype'),
-      url('../fonts/toy_font.woff?r0v3qg') format('woff'),
-      url('../fonts/toy_font.svg?r0v3qg#toy_font') format('svg');
+    src:  url('../fonts/toy_font.eot?l96bez');
+    src:  url('../fonts/toy_font.eot?l96bez#iefix') format('embedded-opentype'),
+      url('../fonts/toy_font.ttf?l96bez') format('truetype'),
+      url('../fonts/toy_font.woff?l96bez') format('woff'),
+      url('../fonts/toy_font.svg?l96bez#toy_font') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -826,4 +833,15 @@ body {
   }
   .icon-list:before {
     content: "\e915";
+  }
+  .icon-arrow_left:before {
+    content: "\e916";
+    // color: #f5f5f5;
+  }
+  .icon-arrow_right:before {
+    content: "\e917";
+    // color: #f5f5f5;
+  }
+  .icon-instagram-logo:before {
+    content: "\e918";
   }

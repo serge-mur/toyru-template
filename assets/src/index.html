@@ -7,11 +7,11 @@
 
 <body>
     <ul>
+        <h1>Верстка TOY.RU</h1>
         <li><a href="main.html">Главная страница</a></li>
-        <li><a href="catalog.html">Страница каталога</a></li>
-        <!-- <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li> -->
+        <li><a href="catalog-category.html">Страница каталога. Список разделов</a></li>
+        <li><a href="catalog-products.html">Страница каталога. Товары</a></li>
+        <li><a href="product-card.html">Карточка товара</a></li>
     </ul>
 
     <script>
@@ -20,6 +20,7 @@
         }
         if (isTouchDevice()) {
             console.log('isTouchDevice');
+            document.querySelector("h1").style.fontSize = "55px";
             var x = document.querySelectorAll("a");
             var i;
             for (i = 0; i < x.length; i++) {
