@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-12 col-sm-5">
                         <div class="slider-for">
                             <div>
                                 <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
@@ -77,30 +77,80 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-sm-5">
                         <h1>Johnny the Skull 3053-2 Тир проекционный 3D Джонни-Черепок с 2-мя бластерами</h1>
-<p>4 999 руб.
-        4 199 руб.
-        Выгода: 800 руб. -16%
-         Товар есть в наличии</p>
 
+                        <div class="old-price">4 999 руб.</div>
+                        <div class="price">4 199 руб.</div>
+                        <div class="discount">-16%</div>
 
-                        <p>
-                        Артикул: 3053-2
-                        Рекомендуемый возраст – 6-8 лет, 9-12 лет
-                        Пол: для мальчиков
-                        Бренд	: Johnny The Skull
-                        Артикул	: 3053-2
-                        Размер упаковки: 0.440	х 0.130	х 0.250 м
-                        Вес	: 1.08 кг.
+                        <div class="btn btn-primary">Купить</div>
 
-</p>                        
+                        <div class="specifications">
+                            <p>Артикул: <span>3053-2</span></p>
+                            <p>Рекомендуемый возраст – <span>6-8 лет, 9-12 лет</span></p>
+                            <p>Пол: <span>для мальчиков</span></p>
+                            <p>Бренд: <span>Johnny The Skull</span></p>
+                            <p>Артикул: <span>3053-2</span></p>
+                            <p>Размер упаковки: <span>0.440 х 0.130 х 0.250 м</span></p>
+                            <p>Вес: <span>1.08 кг.</span></p>                                
+                        </div>
+                    
                     </div>
                     <div class="col-2">
-                        three
+                        <div>Наличие: <span>Да</span></div>
                     </div>
                 </div>
-                <div class="row">
+
+                <div class="row sticky-top" id="card-nav">
+                    <div class="col-12">
+                        <div class="nav" style="background-color: #fff">
+                            <a class="nav-link" href="#el1">Похожие товары</a>
+                            <a class="nav-link" href="#el2">Полное описание</a>
+                            <a class="nav-link" href="#el3">Отзывы</a>
+                            <a class="nav-link" href="#el4">Просмотренные</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row" id="el1">
+                    <div class="col-12">
+                        <h3>Похожие товары</h3>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="slider-products">
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                            <div style="width: 220px">
+                                //= template/card.html
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" id="el2">
                     <div class="col-12">
                         <h3>Описание</h3>
                         <p>
@@ -133,6 +183,36 @@
     
                     </div>
                 </div>
+
+                <div class="row" id="el3">
+                    <div class="col-12">
+                        <h3>Отзывы</h3>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed luctus nulla. Donec tincidunt in felis eu placerat. Mauris at ipsum sit amet magna hendrerit fermentum. Duis elementum nisl vitae urna tempor mattis. Sed cursus purus sit amet ligula ullamcorper, at aliquet nibh interdum. Nam tempus tempus tincidunt. Mauris in mattis elit, vitae egestas magna.</p>  
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed luctus nulla. Donec tincidunt in felis eu placerat. Mauris at ipsum sit amet magna hendrerit fermentum. Duis elementum nisl vitae urna tempor mattis. Sed cursus purus sit amet ligula ullamcorper, at aliquet nibh interdum. Nam tempus tempus tincidunt. Mauris in mattis elit, vitae egestas magna.</p>  
+                    </div>
+                </div>
+
+                <div class="row" id="el4">
+                    <div class="col-12">
+                        <h3>Просмотренные</h3>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        //= template/card.html
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        //= template/card.html
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        //= template/card.html
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        //= template/card.html
+                    </div>
+                </div>
+    
+
             </div>
 
         </main>
@@ -160,7 +240,21 @@
             dots: true,
             // centerMode: true,
             focusOnSelect: true
-        });    
+        }); 
+
+        $('.slider-products').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: true,
+        });
+
+        $("#card-nav .nav-link").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top-60}, 1000);
+    });
+
     </script>
 
 </body>
