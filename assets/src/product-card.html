@@ -6,7 +6,7 @@
     <title>Карточка товара</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
 
     //= template/mobile-menu.html
 
@@ -34,185 +34,280 @@
                         </nav>
                     </div>
                 </div>
+                <div class="row" id="product-card">
+                    <div class="col-12 col-lg-5">
+                        <div class="slider-for" data-slideout-ignore>
+                            <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                        </div>
+                        <div class="slider-nav d-none d-lg-block" data-slideout-ignore>
+                            <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                            <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7">
+
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <h1 class="mb-4">Johnny the Skull 3053-2 Тир проекционный 3D Джонни-Черепок с 2-мя бластерами</h1>
+                                <div class="price-block mb-4">
+                                    <div class="old-price">4 999 руб.</div>
+                                    <div>
+                                        <div class="price">4 199 руб.</div>
+                                        <div class="discount">-16%</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center flex-nowrap">
+                                        <div class="counter">
+                                            <button type="button" class="but counterBut dec">-</button>
+                                            <input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+                                            <button type="button" class="but counterBut inc">+</button>
+                                        </div>
+                                        <a href="#" class="btn btn-primary text-uppercase w-50 btn-buy">Купить</a>
+                                        <a href="#" class="btn btn-favorite ml-2"><i class="icon-heart"></i></a>  
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-link">Заказ в 1 клик</a>                                    
+
+                                </div>
+
+                                <a href="#" class="btn btn-toy-gray my-4">Товар участвует в акции!</a>
+
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <span class="stars-rating">
+                                    <i class="icon-star_color"></i>
+                                    <i class="icon-star_color"></i>
+                                    <i class="icon-star_color"></i>
+                                    <i class="icon-star_color"></i>
+                                    <i class="icon-star_contur"></i>
+                                </span>
+                                <span class="num-vote">17</span>
+                                <div>Наличие:
+                                    <span>Да</span>
+                                </div>
+                                <hr>
+                                <a href="#">
+                                    <img class="img-fluid" src="img/brands/brand_01.png" alt="">
+                                </a>
+                                <hr>
+                                <div>Гарантия лучшей цены!</div>
+                                <a class="d-block" href="#">Хотите дешевле?</a>
+                                <hr>
+                                <div class="delivery-block">
+                                    <p>Самовывоз:
+                                        <a href="#">сегодня</a>
+                                    </p>
+                                    <p>Курьером:
+                                        <a href="#">завтра</a>
+                                    </p>
+                                    <p>Срочная:
+                                        <a href="#">через 3 часа</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="specification-block mb-4">
+                                    <h3 class="title mt-4 d-lg-none">Характеристики</h3>                                    
+                                    <p>Артикул:
+                                        <span>3053-2</span>
+                                    </p>
+                                    <p>Рекомендуемый возраст –
+                                        <span>6-8 лет, 9-12 лет</span>
+                                    </p>
+                                    <p>Пол:
+                                        <span>для мальчиков</span>
+                                    </p>
+                                    <p>Бренд:
+                                        <span>Johnny The Skull</span>
+                                    </p>
+                                    <p>Артикул:
+                                        <span>3053-2</span>
+                                    </p>
+                                    <p>Размер упаковки:
+                                        <span>0.440 х 0.130 х 0.250 м</span>
+                                    </p>
+                                    <p>Вес:
+                                        <span>1.08 кг.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticky-top d-none d-lg-block" id="card-nav">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav" id="navbar-example3">
+                                <a class="nav-link" href="#el1">Похожие товары</a>
+                                <a class="nav-link" href="#el2">Полное описание</a>
+                                <a class="nav-link" href="#el3">Отзывы</a>
+                                <a class="nav-link" href="#el4">Просмотренные</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="position-relative">                 -->
+
                 <div class="row">
-                    <div class="col-12 col-sm-5">
-                        <div class="slider-for">
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                    <div class="col-12">
+                        <div class="card-section similar-goods-block" id="el1">
+                            <h3 class="title d-lg-none">Похожие товары</h3>
+                            <div class="slider-products" data-slideout-ignore>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
                             </div>
                         </div>
-                        <div class="slider-nav">
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+
+                        <div class="card-section description-block" id="el2">
+                            <h3 class="title">Описание</h3>
+                            <p>
+                                Это обновленный и усовершенствованный интерактивный тир Johnny The Skull – отличный выбор подарка для мальчика, особенно
+                                для поклонника активных игр со стрельбой. Интерактивный тир предназначен для игры в закрытых
+                                помещениях и совершенно безопасен и для игроков, и для обстановки квартиры, ведь стрелять
+                                Вам придется не пульками, стрелами или другими снарядами, а невидимым лучом! С интерактивными
+                                игрушками Johnny The Skull Вам не потребуется много свободного пространства, достаточно будет
+                                погасить свет в комнате и можно начинать увлекательнейшую охоту на привидения и летучих мышей!
+                                Комплект набора состоит из проектора в виде симпатичного скелетика по имени Джонни, отбрасывающего
+                                световые проекции на стены и потолок комнаты, и двух электронных бластеров, которые будут
+                                подсчитывать количество метких выстрелов.
+                            </p>
+                            <p>
+                                Новая версия игрового набора отличается дизайном проектора – Джонни Черепок теперь выполнен в зеленом цвете, дополнена 3D-очками
+                                для объемного видения, помимо привидений Джонни проецирует изображения летучих мышей-вампиров,
+                                подстрелить которых гораздо сложнее и каждый меткий выстрел по этой цели оценивается втрое
+                                больше обычного. В комплект включены 2 пары очков и 2 бластера.
+                            </p>
+                            <p>
+                                Для работы игрушки необходимы элементы питания (в комплект набора не входят, приобретаются отдельно) – 4 батарейки типа AA/LR6
+                                1.5V&nbsp;(«пальчиковые) для проектора и 3 батарейки типа AAA/LR03 1.5V&nbsp;(«мизинчиковые»)
+                                для каждого бластера (для двух бластеров – 6 шт.).
+                            </p>
+                            <p>
+                                Купить&nbsp;Johnny the Skull 3053-2 Тир проекционный 3D Джонни-Черепок с 2-мя бластерами по низкой цене можно в интернет-магазине
+                                Toy.ru.&nbsp;Доставка осуществляется по всем регионам России, а также в республики Беларусь
+                                и Казахстан.
+                            </p>
+                        </div>
+
+                        <div class="card-section review-block" id="el3">
+                            <h3 class="title">Отзывы</h3>
+                            <div class="row mb-4">
+                                <div class="col-12 col-lg-2">
+                                    <div class="review-name">
+                                        Ксения
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-10">
+                                    <div class="review-date">3 сентября 2016, 11:38</div>
+                                    <div class="product-stars">
+                                        <span class="stars-rating">
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_contur"></i>
+                                        </span>
+                                    </div>
+                                    <div class="review-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed luctus nulla. Donec tincidunt in felis eu placerat. Mauris at ipsum sit amet magna hendrerit fermentum. Duis elementum nisl vitae urna tempor mattis. Sed cursus purus sit amet ligula ullamcorper, at aliquet nibh interdum. Nam tempus tempus tincidunt. Mauris in mattis elit, vitae egestas magna.
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="img/card/slide_02.jpg" alt="">
+                            <div class="row mb-4">
+                                <div class="col-12 col-lg-2">
+                                    <div class="review-name">
+                                        Ксения
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-10">
+                                    <div class="review-date">3 сентября 2016, 11:38</div>
+                                    <div class="product-stars">
+                                        <span class="stars-rating">
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_color"></i>
+                                            <i class="icon-star_contur"></i>
+                                        </span>
+                                    </div>
+                                    <div class="review-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed luctus nulla. Donec tincidunt in felis eu placerat. Mauris at ipsum sit amet magna hendrerit fermentum. Duis elementum nisl vitae urna tempor mattis. Sed cursus purus sit amet ligula ullamcorper, at aliquet nibh interdum. Nam tempus tempus tincidunt. Mauris in mattis elit, vitae egestas magna.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-5">
-                        <h1>Johnny the Skull 3053-2 Тир проекционный 3D Джонни-Черепок с 2-мя бластерами</h1>
 
-                        <div class="old-price">4 999 руб.</div>
-                        <div class="price">4 199 руб.</div>
-                        <div class="discount">-16%</div>
-
-                        <div class="btn btn-primary">Купить</div>
-
-                        <div class="specifications">
-                            <p>Артикул: <span>3053-2</span></p>
-                            <p>Рекомендуемый возраст – <span>6-8 лет, 9-12 лет</span></p>
-                            <p>Пол: <span>для мальчиков</span></p>
-                            <p>Бренд: <span>Johnny The Skull</span></p>
-                            <p>Артикул: <span>3053-2</span></p>
-                            <p>Размер упаковки: <span>0.440 х 0.130 х 0.250 м</span></p>
-                            <p>Вес: <span>1.08 кг.</span></p>                                
-                        </div>
-                    
-                    </div>
-                    <div class="col-2">
-                        <div>Наличие: <span>Да</span></div>
-                    </div>
-                </div>
-
-                <div class="row sticky-top" id="card-nav">
-                    <div class="col-12">
-                        <div class="nav" style="background-color: #fff">
-                            <a class="nav-link" href="#el1">Похожие товары</a>
-                            <a class="nav-link" href="#el2">Полное описание</a>
-                            <a class="nav-link" href="#el3">Отзывы</a>
-                            <a class="nav-link" href="#el4">Просмотренные</a>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="row" id="el1">
-                    <div class="col-12">
-                        <h3>Похожие товары</h3>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="slider-products">
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
-                            </div>
-                            <div style="width: 220px">
-                                //= template/card.html
+                        <div class="card-section viewed-products-block" id="el4">
+                            <h3 class="title">Просмотренные товары</h3>
+                            <div class="slider-products2" data-slideout-ignore>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
+                                <div style="width: 285px">
+                                    //= template/card.html
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
-
-                <div class="row" id="el2">
-                    <div class="col-12">
-                        <h3>Описание</h3>
-                        <p>
-                            Это обновленный и усовершенствованный интерактивный тир Johnny The Skull – отличный выбор подарка для мальчика, особенно
-                            для поклонника активных игр со стрельбой. Интерактивный тир предназначен для игры в закрытых
-                            помещениях и совершенно безопасен и для игроков, и для обстановки квартиры, ведь стрелять Вам
-                            придется не пульками, стрелами или другими снарядами, а невидимым лучом! С интерактивными игрушками
-                            Johnny The Skull Вам не потребуется много свободного пространства, достаточно будет погасить
-                            свет в комнате и можно начинать увлекательнейшую охоту на привидения и летучих мышей! Комплект
-                            набора состоит из проектора в виде симпатичного скелетика по имени Джонни, отбрасывающего световые
-                            проекции на стены и потолок комнаты, и двух электронных бластеров, которые будут подсчитывать
-                            количество метких выстрелов.
-                        </p>
-                        <p>
-                            Новая версия игрового набора отличается дизайном проектора – Джонни Черепок теперь выполнен в зеленом цвете, дополнена 3D-очками
-                            для объемного видения, помимо привидений Джонни проецирует изображения летучих мышей-вампиров,
-                            подстрелить которых гораздо сложнее и каждый меткий выстрел по этой цели оценивается втрое больше
-                            обычного. В комплект включены 2 пары очков и 2 бластера.
-                        </p>
-                        <p>
-                            Для работы игрушки необходимы элементы питания (в комплект набора не входят, приобретаются отдельно) – 4 батарейки типа AA/LR6
-                            1.5V&nbsp;(«пальчиковые) для проектора и 3 батарейки типа AAA/LR03 1.5V&nbsp;(«мизинчиковые»)
-                            для каждого бластера (для двух бластеров – 6 шт.).
-                        </p>
-                        <p>
-                            Купить&nbsp;Johnny the Skull 3053-2 Тир проекционный 3D Джонни-Черепок с 2-мя бластерами по низкой цене можно в интернет-магазине
-                            Toy.ru.&nbsp;Доставка осуществляется по всем регионам России, а также в республики Беларусь и
-                            Казахстан.
-                        </p>
-    
                     </div>
                 </div>
 
-                <div class="row" id="el3">
-                    <div class="col-12">
-                        <h3>Отзывы</h3>
-                    </div>
-                    <div class="col-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed luctus nulla. Donec tincidunt in felis eu placerat. Mauris at ipsum sit amet magna hendrerit fermentum. Duis elementum nisl vitae urna tempor mattis. Sed cursus purus sit amet ligula ullamcorper, at aliquet nibh interdum. Nam tempus tempus tincidunt. Mauris in mattis elit, vitae egestas magna.</p>  
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed luctus nulla. Donec tincidunt in felis eu placerat. Mauris at ipsum sit amet magna hendrerit fermentum. Duis elementum nisl vitae urna tempor mattis. Sed cursus purus sit amet ligula ullamcorper, at aliquet nibh interdum. Nam tempus tempus tincidunt. Mauris in mattis elit, vitae egestas magna.</p>  
-                    </div>
-                </div>
-
-                <div class="row" id="el4">
-                    <div class="col-12">
-                        <h3>Просмотренные</h3>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        //= template/card.html
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        //= template/card.html
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        //= template/card.html
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        //= template/card.html
-                    </div>
-                </div>
-    
-
+                <!-- </div> -->
             </div>
 
         </main>
@@ -237,23 +332,121 @@
             slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
-            dots: true,
+            // dots: true,
             // centerMode: true,
             focusOnSelect: true
-        }); 
+        });
 
         $('.slider-products').slick({
-            slidesToShow: 6,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                     slidesToScroll: 3
+                    }
+                },                  
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },               
+                {
+                    breakpoint: 321,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        });
+
+        $('.slider-products2').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                     slidesToScroll: 3
+                    }
+                },                  
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },               
+                {
+                    breakpoint: 321,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
         });
 
         $("#card-nav .nav-link").on("click", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top-60}, 1000);
-    });
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1000);
+        });
+
+        $('body').scrollspy({ target: '#navbar-example3' })
+
+        function catalogItemCounter(field) {
+            var fieldCount = function (el) {
+                var
+                    // Мин. значение
+                    min = el.data('min') || false,
+                    // Макс. значение
+                    max = el.data('max') || false,
+                    // Кнопка уменьшения кол-ва
+                    dec = el.prev('.dec'),
+                    // Кнопка увеличения кол-ва
+                    inc = el.next('.inc');
+                function init(el) {
+                    if (!el.attr('disabled')) {
+                        dec.on('click', decrement);
+                        inc.on('click', increment);
+                    }
+                    // Уменьшим значение
+                    function decrement() {
+                        var value = parseInt(el[0].value);
+                        value--;
+                        if (!min || value >= min) {
+                            el[0].value = value;
+                        }
+                    };
+                    // Увеличим значение
+                    function increment() {
+                        var value = parseInt(el[0].value);
+                        value++;
+                        if (!max || value <= max) {
+                            el[0].value = value++;
+                        }
+                    };
+                }
+                el.each(function () {
+                    init($(this));
+                });
+            };
+            $(field).each(function () {
+                fieldCount($(this));
+            });
+        }
+        catalogItemCounter('.fieldCount');
+
 
     </script>
 

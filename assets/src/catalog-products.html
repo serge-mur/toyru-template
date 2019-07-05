@@ -23,8 +23,12 @@
                     <div class="col-12">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item"><a href="#">Настольные игры</a></li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Настольные игры</a>
+                                </li>
                                 <li class="breadcrumb-item active" aria-current="page">Каталог продукции</li>
                             </ol>
                         </nav>
@@ -32,16 +36,64 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-3">
-                        фильтр
-                    </div>
-                    <div class="col-9">
-                        <h1>Настольные игры</h1>                                
+                    <div class="d-none d-lg-block col-lg-3">
+                        <h3>фильтр</h3>
 
-                    </div>                           
-                </div>                   
+                        //= template/gift-picking.html
+                    </div>
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="page-title">Настольные игры</h1>
+
+                        <div class="row mb-2">
+                            <div class="col-12 col-lg-4">
+                                //= template/pagination.html
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="sorting-block">Сортировать по: <span>цена</span><span>популярность</span><span>скидка</span><span>рейтинг</span><span>новинкам</span></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                //= template/pagination.html
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-           
+
         </main>
 
         <footer id="footer">

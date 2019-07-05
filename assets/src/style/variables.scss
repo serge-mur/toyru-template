@@ -21,7 +21,6 @@ $enable-responsive-font-sizes: true;
 
 // fonts 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css');
 $font-family-base: 'PT Sans', sans-serif;
 $body-color: $toy-dark-gray;
 
@@ -50,3 +49,14 @@ $breadcrumb-bg: #fff;
 $breadcrumb-divider-color: $toy-gray;
 $breadcrumb-active-color: $toy-dark-gray;
 $breadcrumb-divider: "\2022";
+
+// Pagination
+$pagination-color:                  $toy-dark-gray;
+$pagination-bg:                     transparent;
+$pagination-border-width:           0;
+$pagination-hover-color:            $toy-dark-orange;
+$pagination-hover-bg:               transparent;
+$pagination-active-color:           $toy-dark-orange;
+$pagination-active-bg:              transparent;
+$pagination-disabled-color:         $toy-gray;
+$pagination-disabled-bg:            transparent;
