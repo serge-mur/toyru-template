@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Оформление заказа. Шаг 3. Доставка</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
+
+    //= template/mobile-menu.html
+
+    <div id="panel" class="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="">
+
+            <div class="container">
+                
+                //= template/cart-steps.html
+
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                                
+                        <div class="nav nav-pills mb-4" id="delivery-tab" role="tablist">
+                            <a class="nav-link active" id="express-tab" data-toggle="tab" href="#express" role="tab" aria-controls="express" aria-selected="true">Курьерская доставка</a>
+                            <a class="nav-link" id="pickup-tab" data-toggle="tab" href="#pickup" role="tab" aria-controls="pickup" aria-selected="false">Самовывоз из магазина</a>
+                        </div>
+
+                        <div class="tab-content" id="top-goods-content">
+                            <div class="tab-pane fade show active" id="express" role="tabpanel" aria-labelledby="express-tab">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="city">
+                                                        <label class="form-control-placeholder" for="city">Город</label>
+                                                    </div>                                          
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="street">
+                                                        <label class="form-control-placeholder" for="street">Улица</label>
+                                                    </div>                                         
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="dom">
+                                                        <label class="form-control-placeholder" for="dom">Дом</label>
+                                                    </div>                                                                                  
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="corps">
+                                                        <label class="form-control-placeholder" for="corps">Корпус</label>
+                                                    </div>                                                                                  
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="flat">
+                                                        <label class="form-control-placeholder" for="flat">Квартира</label>
+                                                    </div>                                                                                  
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="date-delivery">
+                                                            <option></option>
+                                                            <option>Пятница, 16 февраля</option>
+                                                            <option>Суббота, 17 февраля</option>
+                                                            <option>Понедельник, 19 февраля</option>
+                                                        </select>
+                                                        <label class="form-control-placeholder" for="date-delivery">Дата доставки</label>
+                                                    </div>                                                                                  
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="time-delivery">
+                                                            <option></option>
+                                                            <option>12.00</option>
+                                                            <option>17.00</option>
+                                                            <option>19.00</option>
+                                                        </select>
+                                                        <label class="form-control-placeholder" for="time-delivery">Время доставки</label>
+                                                    </div>                                                                                                                                                                  
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="col-8">
+                                        <img class="img-fluid" src="img/cart_map.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+                                2
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="checkout-block p-3">
+
+                            <div class="total-block mb-4">
+                                <p>Промокод: <span>-445 руб.</span></p>
+                                <p>Программа лояльности: <span>-388 руб.</span></p>
+                                <p>Сертификат: <span>-5 руб.</span></p>
+                                
+                                <hr>
+
+                                <p>Вы экономите: <span>1 205 руб.</span></p>
+                                <p class="total-text">Итого: <span>4 505 руб.</span></p>
+
+                            </div>
+                                
+                            <a href="#" class="btn btn-primary">Продолжить</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+</body>
+
+</html>

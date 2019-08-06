@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link rel="stylesheet" href="css/main.min.css">
-    <title>Страница каталога. Список разделов</title>
+    <title>Оформление заказа. Шаг 3. Доставка</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
 
     <nav class="nav justify-content-around text-center d-lg-none fixed-header" id="mobile-icon-menu">
             
@@ -277,51 +277,127 @@
         <main id="main" class="">
 
             <div class="container">
+                
                 <div class="row">
                     <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Каталог продукции</li>
-                            </ol>
-                        </nav>
+                        <div class="d-flex justify-content-between align-items-center my-4 flex-nowrap" id="cart-steps">
+                            <div class="active"><i class="icon-basket_ring"></i><span>Корзина</span></div>
+                            <div class="separator"></div>
+                            <div class=""><i class="icon-profile_ring"></i><span>Данные</span></div>
+                            <div class="separator"></div>
+                            <div class=""><i class="icon-delivery_ring"></i><span>Доставка</span></div>
+                            <div class="separator"></div>
+                            <div class=""><i class="icon-cart_ring"></i><span>Оплата</span></div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-12">
-                        <h1 class="page-title">Каталог продукции</h1>
-                        <div class="row">
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#" class="category-img d-flex align-items-end" style="">
+                    <div class="col-12 col-lg-9">
+                                
+                        <div class="nav nav-pills mb-4" id="delivery-tab" role="tablist">
+                            <a class="nav-link active" id="express-tab" data-toggle="tab" href="#express" role="tab" aria-controls="express" aria-selected="true">Курьерская доставка</a>
+                            <a class="nav-link" id="pickup-tab" data-toggle="tab" href="#pickup" role="tab" aria-controls="pickup" aria-selected="false">Самовывоз из магазина</a>
+                        </div>
 
-                                    <div class="name-layer">Куклы<br> и аксессуары</div>
+                        <div class="tab-content" id="top-goods-content">
+                            <div class="tab-pane fade show active" id="express" role="tabpanel" aria-labelledby="express-tab">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="city">
+                                                        <label class="form-control-placeholder" for="city">Город</label>
+                                                    </div>                                          
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="street">
+                                                        <label class="form-control-placeholder" for="street">Улица</label>
+                                                    </div>                                         
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="dom">
+                                                        <label class="form-control-placeholder" for="dom">Дом</label>
+                                                    </div>                                                                                  
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="corps">
+                                                        <label class="form-control-placeholder" for="corps">Корпус</label>
+                                                    </div>                                                                                  
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="flat">
+                                                        <label class="form-control-placeholder" for="flat">Квартира</label>
+                                                    </div>                                                                                  
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="date-delivery">
+                                                            <option></option>
+                                                            <option>Пятница, 16 февраля</option>
+                                                            <option>Суббота, 17 февраля</option>
+                                                            <option>Понедельник, 19 февраля</option>
+                                                        </select>
+                                                        <label class="form-control-placeholder" for="date-delivery">Дата доставки</label>
+                                                    </div>                                                                                  
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="time-delivery">
+                                                            <option></option>
+                                                            <option>12.00</option>
+                                                            <option>17.00</option>
+                                                            <option>19.00</option>
+                                                        </select>
+                                                        <label class="form-control-placeholder" for="time-delivery">Время доставки</label>
+                                                    </div>                                                                                                                                                                  
+                                                </div>
+                                            </div>
 
-                                </a>
+                                        </form>
+                                    </div>
+                                    <div class="col-8">
+                                        <img class="img-fluid" src="img/cart_map.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <!-- <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#"><img class="img-fluid" src="img/catalog/cat_01.png" alt=""></a>
+                            <div class="tab-pane fade" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+                                2
                             </div>
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#"><img class="img-fluid" src="img/catalog/cat_02.png" alt=""></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#"><img class="img-fluid" src="img/catalog/cat_03.png" alt=""></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#"><img class="img-fluid" src="img/catalog/cat_04.png" alt=""></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#"><img class="img-fluid" src="img/catalog/cat_05.png" alt=""></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <a href="#"><img class="img-fluid" src="img/catalog/cat_06.png" alt=""></a>
-                            </div> -->
+                        </div>
 
-                        </div>                   
+
+
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="checkout-block p-3">
+
+                            <div class="total-block mb-4">
+                                <p>Промокод: <span>-445 руб.</span></p>
+                                <p>Программа лояльности: <span>-388 руб.</span></p>
+                                <p>Сертификат: <span>-5 руб.</span></p>
+                                
+                                <hr>
+
+                                <p>Вы экономите: <span>1 205 руб.</span></p>
+                                <p class="total-text">Итого: <span>4 505 руб.</span></p>
+
+                            </div>
+                                
+                            <a href="#" class="btn btn-primary">Продолжить</a>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
-           
+
         </main>
 
         <footer id="footer">
