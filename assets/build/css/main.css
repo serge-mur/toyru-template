@@ -7827,6 +7827,19 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: transparent;
   font-weight: bold; }
 
+.accordion a[data-toggle="collapse"] {
+  display: block;
+  color: #505050;
+  font-size: 1.125rem; }
+  .accordion a[data-toggle="collapse"]:hover {
+    text-decoration: none; }
+  .accordion a[data-toggle="collapse"] + div ul {
+    list-style: none;
+    padding: 1rem; }
+    .accordion a[data-toggle="collapse"] + div ul li a {
+      color: #adadad;
+      font-size: 1rem; }
+
 /* mobile navigation */
 #mobile-icon-menu {
   position: fixed;
@@ -8554,6 +8567,51 @@ body {
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   opacity: 1; }
+
+/* cart confirm css */
+.confirm-header {
+  background: url(../img/confirm_back.png) no-repeat;
+  background-size: cover; }
+  .confirm-header .text-block {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #505050; }
+    @media (max-width: 1200px) {
+      .confirm-header .text-block {
+        font-size: calc(1.275rem + 0.3vw) ; } }
+  .confirm-header .btn {
+    color: #fff;
+    text-transform: uppercase; }
+
+.confirm-products-block {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px; }
+  .confirm-products-block .item {
+    margin-bottom: 1rem; }
+    .confirm-products-block .item .name {
+      font-size: 1.125rem;
+      line-height: 1; }
+    .confirm-products-block .item .quantity {
+      font-size: 1rem;
+      color: #adadad; }
+      .confirm-products-block .item .quantity span {
+        color: #505050; }
+
+.confirm-delivery-block {
+  background-color: #f6f6f6;
+  border-radius: 5px; }
+
+.confirm-payment-block {
+  background-color: #f6f6f6;
+  border-radius: 5px; }
+
+.confirm-subscribe-block {
+  background-color: #f6f6f6;
+  border-radius: 5px; }
+
+.confirm-total-price-block p {
+  font-size: 1.125rem;
+  font-weight: bold; }
 
 /* other css */
 .page-title {

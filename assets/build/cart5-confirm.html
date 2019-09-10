@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link rel="stylesheet" href="css/main.min.css">
-    <title>Оформление заказа. Шаг 3. Доставка</title>
+    <title>Оформление заказа. Шаг 5. Подтверждение</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
@@ -277,121 +277,77 @@
         <main id="main" class="">
 
             <div class="container">
-                
+
                 <div class="row">
                     <div class="col-12">
-                        <div class="d-flex justify-content-between align-items-center my-4 flex-nowrap" id="cart-steps">
-                            <div class="active"><i class="icon-basket_ring"></i><span>Корзина</span></div>
-                            <div class="separator"></div>
-                            <div class=""><i class="icon-profile_ring"></i><span>Данные</span></div>
-                            <div class="separator"></div>
-                            <div class=""><i class="icon-delivery_ring"></i><span>Доставка</span></div>
-                            <div class="separator"></div>
-                            <div class=""><i class="icon-cart_ring"></i><span>Оплата</span></div>
-                        </div>
-                    </div>
-                </div>
+                        <div class="confirm-header my-4 py-4 px-4">
+                            <div class="row align-items-center">                            
+                                <div class="d-none d-lg-block col-lg-3">
 
-                <div class="row">
-                    <div class="col-12 col-lg-9">
-                                
-                        <div class="nav nav-pills mb-4" id="delivery-tab" role="tablist">
-                            <a class="nav-link active" id="express-tab" data-toggle="tab" href="#express" role="tab" aria-controls="express" aria-selected="true">Курьерская доставка</a>
-                            <a class="nav-link" id="pickup-tab" data-toggle="tab" href="#pickup" role="tab" aria-controls="pickup" aria-selected="false">Самовывоз из магазина</a>
-                        </div>
-
-                        <div class="tab-content" id="top-goods-content">
-                            <div class="tab-pane fade show active" id="express" role="tabpanel" aria-labelledby="express-tab">
-                                <div class="row">
-                                    <div class="col-12 col-lg-5">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="city">
-                                                        <label class="form-control-placeholder" for="city">Город</label>
-                                                    </div>                                          
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="street">
-                                                        <label class="form-control-placeholder" for="street">Улица</label>
-                                                    </div>                                         
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="dom">
-                                                        <label class="form-control-placeholder" for="dom">Дом</label>
-                                                    </div>                                                                                  
-                                                </div>
-                                                <div class="col-4 px-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="corps">
-                                                        <label class="form-control-placeholder" for="corps">Корпус</label>
-                                                    </div>                                                                                  
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="flat">
-                                                        <label class="form-control-placeholder" for="flat">Квартира</label>
-                                                    </div>                                                                                  
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <select class="form-control" id="date-delivery">
-                                                            <option></option>
-                                                            <option>Пятница, 16 февраля</option>
-                                                            <option>Суббота, 17 февраля</option>
-                                                            <option>Понедельник, 19 февраля</option>
-                                                        </select>
-                                                        <label class="form-control-placeholder" for="date-delivery">Дата доставки</label>
-                                                    </div>                                                                                  
-                                                    <div class="form-group">
-                                                        <select class="form-control" id="time-delivery">
-                                                            <option></option>
-                                                            <option>12.00</option>
-                                                            <option>17.00</option>
-                                                            <option>19.00</option>
-                                                        </select>
-                                                        <label class="form-control-placeholder" for="time-delivery">Время доставки</label>
-                                                    </div>                                                                                                                                                                  
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    <div class="col-12 col-lg-7 mb-4">
-                                        <img class="img-fluid" src="img/cart_map.png" alt="">
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
-                                2
-                            </div>
+                                <div class="col-12 col-sm-6 col-lg-6 mb-4 mb-lg-0">
+                                    <span class="text-block">Спасибо за заказ! Выберите подарок-скидку от наших партнеров</span>
+                                </div>                            
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <button class="btn btn-secondary w-100">Выбрать</button>
+                                </div>
+                            </div>                            
                         </div>
-
+                        <h3>Ваш заказ № от 06.02.2018 14:53:49 успешно создан</h3>
+                        <ul>
+                            <li>Вы можете следить за выполнением своего заказа перейдя в <a href="#">Личный кабинет</a></li>
+                            <li>Обратите внимание, что для входа в этот раздел вам необходимо будет ввести логин и пароль пользователя сайта</li>
+                            <li>Сотрудник интернет-магазина свяжется с Вами в ближайшее время для подтверждения заказа</li>
+                            <li>Позвонив по телефону 8 (800) 500-23-70, Вы можете изменить состав заказа, метод оплаты, способ получения и прочее</li>
+                        </ul>                                                              
                     </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="confirm-products-block p-3 mb-4">
+                            <div class="item">
+                                <div class="name">L.O.L. Surprise Гламурная кукла-нимфетка</div>
+                                <div class="quantity">Количество: <span>1</span></div>
+                            </div>
+                            <div class="item">
+                                <div class="name">L.O.L. Surprise Гламурная кукла-нимфетка</div>
+                                <div class="quantity">Количество: <span>1</span></div>
+                            </div>
+                            <div class="item">
+                                <div class="name">L.O.L. Surprise Гламурная кукла-нимфетка</div>
+                                <div class="quantity">Количество: <span>1</span></div>
+                            </div>
+                                
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="confirm-delivery-block p-3 mb-4">
+                            <p>Доставка:</p>
+                            <p>Самовызов из магазина Toy.ru: <span>м. Арбатская, ул. Гаврилова, 62, этаж 12</span></p>
+                            <p>Срок хранения - <span>2</span> дня</p>
+                            <p>Стоимость - <span>200</span> руб.</p>
+                        </div>
+                        <div class="confirm-payment-block p-3 mb-4">
+                            <p>Оплата:</p>
+                            <p>Наличными при получении</p>
+                        </div>
+                        <div class="confirm-total-price-block p-3 mb-4">
+                            <p>Итого к оплате: <span>1 205 руб.</span></p>
+                        </div>
+                    </div>
+
                     <div class="col-12 col-lg-3">
-                        <div class="checkout-block p-3">
-
-                            <div class="total-block mb-4">
-                                <p>Промокод: <span>-445 руб.</span></p>
-                                <p>Программа лояльности: <span>-388 руб.</span></p>
-                                <p>Сертификат: <span>-5 руб.</span></p>
-                                
-                                <hr>
-
-                                <p>Вы экономите: <span>1 205 руб.</span></p>
-                                <p class="total-text">Итого: <span>4 505 руб.</span></p>
-
-                            </div>
-                                
-                            <a href="#" class="btn btn-primary">Продолжить</a>
-
+                        <div class="confirm-subscribe-block p-3">
+                            <p>Напомним Вам о существовании детей!</p>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email">
+                                    <label class="form-control-placeholder" for="email">Ваш E-mail</label>
+                                </div>                                          
+                                <button type="submit" class="btn btn-secondary">Оформить заказ</button>                                         
+                            </form>
                         </div>
                     </div>
+
                 </div>
 
             </div>
