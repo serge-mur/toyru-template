@@ -21,7 +21,7 @@
     }
 }
 .accordion {
-    a[data-toggle="collapse"] {
+    a[data-toggle] {
         display: block;
         color: $toy-dark-gray;
         font-size: 1.125rem;
@@ -38,7 +38,18 @@
                         font-size: 1rem;                        
                     }
                 }
-            }            
+            }      
+        }
+        &:after {
+            vertical-align: middle;
+            float: right;
+            font-family: 'toy_font';
+            font-size: .75rem;
+            content: "\e922";
+            color: $toy-gray;
+        }
+        &.collapsed:after {
+            content: "\e924";
         }
     }
 }

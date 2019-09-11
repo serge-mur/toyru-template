@@ -7827,18 +7827,27 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: transparent;
   font-weight: bold; }
 
-.accordion a[data-toggle="collapse"] {
+.accordion a[data-toggle] {
   display: block;
   color: #505050;
   font-size: 1.125rem; }
-  .accordion a[data-toggle="collapse"]:hover {
+  .accordion a[data-toggle]:hover {
     text-decoration: none; }
-  .accordion a[data-toggle="collapse"] + div ul {
+  .accordion a[data-toggle] + div ul {
     list-style: none;
     padding: 1rem; }
-    .accordion a[data-toggle="collapse"] + div ul li a {
+    .accordion a[data-toggle] + div ul li a {
       color: #adadad;
       font-size: 1rem; }
+  .accordion a[data-toggle]:after {
+    vertical-align: middle;
+    float: right;
+    font-family: 'toy_font';
+    font-size: .75rem;
+    content: "\e922";
+    color: #adadad; }
+  .accordion a[data-toggle].collapsed:after {
+    content: "\e924"; }
 
 /* mobile navigation */
 #mobile-icon-menu {
