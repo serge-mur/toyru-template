@@ -8469,19 +8469,31 @@ body {
   font-size: 1rem; }
 
 /* catalog category css */
-.category-img {
-  background: url(../img/catalog/cat_02_new.png), linear-gradient(to bottom, #ffffff 30%, #ffeaf6 70%);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  height: 200px; }
-  .category-img:hover {
-    text-decoration: none; }
-  .category-img .name-layer {
-    font-size: 0.875rem;
+.category-card {
+  display: block;
+  position: relative; }
+  .category-card .back-color {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background-color: #ff3870;
+    opacity: .5; }
+  .category-card .image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%; }
+  .category-card .title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    font-size: 0.75rem;
     line-height: 1;
-    color: #adadad;
-    margin: .5rem; }
+    padding: .5rem;
+    color: #505050; }
 
 /* cart css */
 #cart-steps div {
