@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Личный кабинет. Настройки профиля</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
+
+    //= template/mobile-menu.html
+
+    <div id="panel" class="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Личный кабинет</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Настройки профиля</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-3">
+                        <h3>Мой кабинет</h3>
+                        <ul class="nav flex-column" id="lk-menu">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Настройки профиля</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">История заказов</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Дни рождения детей</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Рассылки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Снижение цены</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Программа лояльности</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Избранное</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="page-title">Настройки профиля</h1>
+
+                        <form class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="first_name" value="Иван">
+                                    <label class="form-control-placeholder" for="first_name">Ваше имя</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="last_name" value="Иванов">
+                                    <label class="form-control-placeholder" for="last_name">Ваше фамилия</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="patronymic" value="Иванович">
+                                    <label class="form-control-placeholder" for="patronymic">Ваше отчество</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="dob">
+                                    <label class="form-control-placeholder" for="dob">Ваша дата рождения</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone">
+                                    <label class="form-control-placeholder" for="phone">Ваш телефон</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="email">
+                                    <label class="form-control-placeholder" for="email">Ваш E-mail</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="jur_face">
+                                    <label class="form-check-label" for="jur_face">Юридическое лицо</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary text-uppercase w-100">Сохранить изменения</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password">
+                                    <label class="form-control-placeholder" for="password">Пароль</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password2">
+                                    <label class="form-control-placeholder" for="password2">Подтвердите пароль</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-secondary text-uppercase w-100">Сохранить изменения</button>
+                                </div>                             
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+    <script>
+/*
+        $(document).ready(function(){ 
+            $('form').find(".form-control").each(function(ev) {
+                if($(this).val()) { 
+                    $(this).next('.form-control-placeholder').addClass('placeholder-clear');
+                } else {
+                    $(this).next('.form-control-placeholder').removeClass('placeholder-clear');
+                };
+            });
+        }); */
+
+
+    </script>
+
+</body>
+
+</html>

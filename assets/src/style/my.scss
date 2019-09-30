@@ -857,7 +857,7 @@ body {
         right: 0;
         bottom: 0;
         height: 50%;
-        background-color: #ff3870;
+        background-color: transparent;
         opacity: .5;
     }
     .image {
@@ -865,6 +865,7 @@ body {
         bottom: 0;
         right: 0;
         height: 100%;
+        // width: 100%;
     }    
     .title {
         position: absolute;
@@ -993,6 +994,9 @@ body {
     transform: translate3d(0, -100%, 0);
     opacity: 1;
 }
+// .placeholder-clear {
+//     display: none;
+// }
 /* cart confirm css */
 .confirm-header {
     background: url(../img/confirm_back.png) no-repeat;
@@ -1045,6 +1049,19 @@ body {
         font-weight: bold;
     }
 }
+
+/* lk css */
+#lk-menu {
+    .nav-link {
+        color: $toy-gray;
+        font-size: 1.125rem;
+        &:hover, &.active {
+            color: $toy-dark-gray;
+            background-color: $toy-light-gray;
+        }
+    }
+}
+
 
 /* other css */
 .page-title {

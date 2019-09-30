@@ -8478,7 +8478,7 @@ body {
     right: 0;
     bottom: 0;
     height: 50%;
-    background-color: #ff3870;
+    background-color: transparent;
     opacity: .5; }
   .category-card .image {
     position: absolute;
@@ -8633,6 +8633,14 @@ body {
 .confirm-total-price-block p {
   font-size: 1.125rem;
   font-weight: bold; }
+
+/* lk css */
+#lk-menu .nav-link {
+  color: #adadad;
+  font-size: 1.125rem; }
+  #lk-menu .nav-link:hover, #lk-menu .nav-link.active {
+    color: #505050;
+    background-color: #f6f6f6; }
 
 /* other css */
 .page-title {
