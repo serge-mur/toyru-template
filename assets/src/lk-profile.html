@@ -37,30 +37,7 @@
 
                 <div class="row">
                     <div class="d-none d-lg-block col-lg-3">
-                        <h3>Мой кабинет</h3>
-                        <ul class="nav flex-column" id="lk-menu">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Настройки профиля</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">История заказов</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Дни рождения детей</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Рассылки</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Снижение цены</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Программа лояльности</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Избранное</a>
-                            </li>
-                        </ul>
+                        //= template/lk-sidebar.html
                     </div>
 
                     <div class="col-12 col-lg-9">
@@ -152,17 +129,24 @@
     <!-- end #panel -->
 
     <script>
-/*
-        $(document).ready(function(){ 
-            $('form').find(".form-control").each(function(ev) {
-                if($(this).val()) { 
-                    $(this).next('.form-control-placeholder').addClass('placeholder-clear');
-                } else {
-                    $(this).next('.form-control-placeholder').removeClass('placeholder-clear');
-                };
-            });
-        }); */
 
+        function FormControlPlaceholder(){
+            $("input.form-control:not(:focus), textarea.form-control:not(:focus)").each(function(){	
+                if($.trim($(this).val()) != ""){
+                    $(this).addClass("notempty");
+                }else{
+                    $(this).removeClass("notempty");
+                }
+            });
+            $("input.form-control, textarea.form-control").on("blur", function(){
+                if($.trim($(this).val()) != ""){
+                    $(this).addClass("notempty");
+                }else{
+                    $(this).removeClass("notempty");
+                }
+            });	
+        }
+        FormControlPlaceholder();
 
     </script>
 

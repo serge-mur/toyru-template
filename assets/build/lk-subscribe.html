@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link rel="stylesheet" href="css/main.min.css">
-    <title>Личный кабинет. История заказов</title>
+    <title>Личный кабинет. Рассылки</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
@@ -287,7 +287,7 @@
                                 <li class="breadcrumb-item">
                                     <a href="#">Личный кабинет</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">История заказов</li>
+                                <li class="breadcrumb-item active" aria-current="page">Рассылки</li>
                             </ol>
                         </nav>
                     </div>
@@ -326,68 +326,50 @@
 
                     <div class="col-12 col-lg-9">
 
-                        <h1 class="page-title">История заказов</h1>
+                        <h1 class="page-title">Рассылки</h1>
 
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Посмотреть текущие заказы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Посмотреть историю отмененных заказов</a>
-                            </li>
-                        </ul>
-
-                        <div class="items-header d-none d-lg-block">
-                            <div class="row">
-                                <div class="col-1">№</div>                                    
-                                <div class="col-2"></div>                                    
-                                <div class="col-4">Товар</div>
-                                <div class="col-1">Кол-во</div>
-                                <div class="col-1">Цена</div>
-                                <div class="col-1">Скидка</div>
-                                <div class="col-1">Сумма</div>
-                                <div class="col-1">Оплата</div>
-                            </div>
-                        </div>
-                        
-                        <div class="items-block">
-                            
-                            <div class="item mb-4">
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col-12 col-lg-1">
-                                        <span>1</span>
-                                    </div>
-                                    <div class="col-12 col-lg-2">
-                                        <a href="#">
-                                            <img class="img-fluid" src="img/cart_item.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div>L.O.L. Surprise Гламурная кукла-нимфетка</div>
-                                        <div>Артикул: <span>559658</span></div>                                        
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Кол-во: </span>1</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Цена: </span>1000 руб.</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Скидка: </span>0%</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Сумма: </span>1000 руб.</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <span>Наличные</span>
-                                    </div>
+                        <div class="unsubscribe-form">
+                            <div class="ml-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked="checked" value="" id="unsubscribe_dr">
+                                    <label class="form-check-label" for="unsubscribe_dr">
+                                        скидка ко Дню рождения ребёнка
+                                    </label>
                                 </div>
-                            </div><!-- end item -->
-
-                            
-                        </div>
-
-
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_sale">
+                                    <label class="form-check-label" for="unsubscribe_sale">
+                                        акции и распродажи
+                                    </label>
+                                </div>    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_new">
+                                    <label class="form-check-label" for="unsubscribe_new">
+                                        новинки
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_info">
+                                    <label class="form-check-label" for="unsubscribe_info">
+                                        информационные письма
+                                    </label>
+                                </div>    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_personal">
+                                    <label class="form-check-label" for="unsubscribe_personal">
+                                        персональные предложения
+                                    </label>
+                                </div>
+                            </div>
+                        
+                            <div class="my-3">
+                                <button id="ok" class="btn btn-primary mr-3">да, так лучше</button> 
+                                <button id="unsubscribe" class="btn btn-secondary">отписаться от всех рассылок</button>         
+                            </div>
+                        
+                            <div class="message"></div>
+                        
+                        </div>                        
 
                     </div>
                 </div>

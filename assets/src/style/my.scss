@@ -994,9 +994,15 @@ body {
     transform: translate3d(0, -100%, 0);
     opacity: 1;
 }
-// .placeholder-clear {
-//     display: none;
-// }
+// hide placeholder function FormControlPlaceholder();
+.form-control.notempty + .form-control-placeholder, 
+.form-control.notempty + .suggestions-wrapper + .form-control-placeholder,
+.form-control:focus + .suggestions-wrapper + .form-control-placeholder {
+  font-size: 75%;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  opacity: 1; }
+
 /* cart confirm css */
 .confirm-header {
     background: url(../img/confirm_back.png) no-repeat;
@@ -1055,15 +1061,59 @@ body {
     .nav-link {
         color: $toy-gray;
         font-size: 1.125rem;
+        line-height: 1;
         &:hover, &.active {
             color: $toy-dark-gray;
             background-color: $toy-light-gray;
         }
     }
 }
+.card-children {
+    height: 100%;
+    background-color: $toy-light-gray;
+    border: 1px solid transparent;
+    .card-img-top {
+        width: 50%;
+        margin: 1rem auto 0 auto;
+    }
+    .card-body {
+        .card-title {
+            font-size: 1.125rem;
+            line-height: 1;
+            color: $toy-dark-gray;
+        }
+        .card-text {
+            font-size: 0.875rem;
+            line-height: 1;
+            color: $toy-gray;
+            .dob {
+                margin-bottom: .5rem;
+            }
+            .discount-active {
+                border: 1px dotted $toy-orange;
+                background-color: #fff;
+                border-radius: .5rem;
+                padding: .5rem;
+                font-size: 1rem;
+                color: $toy-dark-gray;
+            }
+        }
+    }
+    &.active {
+        background: url(../img/confetti.png) no-repeat 0 0, url(../img/confetti.png) no-repeat 100% 0, $toy-light-gray;
+    }
+}
 
 
 /* other css */
+// buttons
+.btn-secondary {
+    color: #fff!important;
+    // text-transform: uppercase;    
+    @include hover {
+        color: #fff!important;
+    }
+}
 .page-title {
     @include font-size(1.5rem);
     color: $toy-dark-gray;
@@ -1084,8 +1134,12 @@ body {
     color: $toy-gray;
     span {
         margin-right: .5rem;
+        font-family: 'toy_font';
+        font-size: .75rem;        
         &:after {
-            content: "↓";
+            content: "\e922";
+            // content: "\e924";
+            // content: "↓";
         }
         &:hover {
             cursor: pointer;

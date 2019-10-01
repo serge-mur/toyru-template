@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Личный кабинет. Рассылки</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
+
+    //= template/mobile-menu.html
+
+    <div id="panel" class="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Личный кабинет</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Рассылки</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-3">
+                        //= template/lk-sidebar.html
+                    </div>
+
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="page-title">Рассылки</h1>
+
+                        <div class="unsubscribe-form">
+                            <div class="ml-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked="checked" value="" id="unsubscribe_dr">
+                                    <label class="form-check-label" for="unsubscribe_dr">
+                                        скидка ко Дню рождения ребёнка
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_sale">
+                                    <label class="form-check-label" for="unsubscribe_sale">
+                                        акции и распродажи
+                                    </label>
+                                </div>    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_new">
+                                    <label class="form-check-label" for="unsubscribe_new">
+                                        новинки
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_info">
+                                    <label class="form-check-label" for="unsubscribe_info">
+                                        информационные письма
+                                    </label>
+                                </div>    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked="checked" id="unsubscribe_personal">
+                                    <label class="form-check-label" for="unsubscribe_personal">
+                                        персональные предложения
+                                    </label>
+                                </div>
+                            </div>
+                        
+                            <div class="my-3">
+                                <button id="ok" class="btn btn-primary mr-3">да, так лучше</button> 
+                                <button id="unsubscribe" class="btn btn-secondary">отписаться от всех рассылок</button>         
+                            </div>
+                        
+                            <div class="message"></div>
+                        
+                        </div>                        
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+</body>
+
+</html>

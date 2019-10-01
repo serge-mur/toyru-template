@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link rel="stylesheet" href="css/main.min.css">
-    <title>Личный кабинет. Настройки профиля</title>
+    <title>Личный кабинет. Дни рождения детей</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
@@ -287,7 +287,7 @@
                                 <li class="breadcrumb-item">
                                     <a href="#">Личный кабинет</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Настройки профиля</li>
+                                <li class="breadcrumb-item active" aria-current="page">Дни рождения детей</li>
                             </ol>
                         </nav>
                     </div>
@@ -298,101 +298,113 @@
                         <h3>Мой кабинет</h3>
                         <ul class="nav flex-column" id="lk-menu">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Настройки профиля</a>
+                                <a class="nav-link" href="lk-profile.html">Настройки профиля</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">История заказов</a>
+                                <a class="nav-link" href="lk-history.html">История заказов</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Дни рождения детей</a>
+                                <a class="nav-link" href="lk-birthdays-children.html">Дни рождения детей</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Рассылки</a>
+                                <a class="nav-link" href="lk-subscribe.html">Рассылки</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Снижение цены</a>
+                                <a class="nav-link" href="lk-price-drop.html">Снижение цены</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Программа лояльности</a>
+                                <a class="nav-link" href="lk-loyalty-program.html">Программа лояльности</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Избранное</a>
+                                <a class="nav-link" href="lk-favorites.html">Избранное</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Выйти</a>
+                            </li>                            
                         </ul>
                     </div>
 
                     <div class="col-12 col-lg-9">
 
-                        <h1 class="page-title">Настройки профиля</h1>
+                        <h1 class="page-title">Дни рождения детей</h1>
 
-                        <form class="row">
+                        <div class="row">
                             <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="first_name" value="Иван">
-                                    <label class="form-control-placeholder" for="first_name">Ваше имя</label>
+                                <div class="row">
+                                    <div class="col-6 mb-4">
+                                        <div class="card card-children">
+                                            <img src="img/boy.svg" class="card-img-top" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Вася</h5>
+                                                <div class="card-text">
+                                                    <div class="dob">20.04.2010, 9 лет</div>
+                                                    <div class="discount">До скидки: 8 мес. 4 дня</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="card card-children active">
+                                            <img src="img/girl.svg" class="card-img-top" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Тоня</h5>
+                                                <div class="card-text">
+                                                    <div class="dob">20.04.2010, 9 лет</div>
+                                                    <!-- <div class="discount">До скидки: 8 мес. 4 дня</div> -->
+                                                    <div class="discount-active">
+                                                        F64638FFF8HFJF
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="card card-children">
+                                            <img src="img/girl.svg" class="card-img-top" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Глаша</h5>
+                                                <div class="card-text">
+                                                    <div class="dob">20.04.2010, 9 лет</div>
+                                                    <div class="discount">До скидки: 8 мес. 4 дня</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4 d-flex justify-content-center align-items-center">
+                                        <a href="#">+ добавить</a>
+                                    </div>
+                                    <div class="col-6"></div>
+                                    <div class="col-6"></div>
+                                    <div class="col-6"></div>
+                                    <div class="col-6"></div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="last_name" value="Иванов">
-                                    <label class="form-control-placeholder" for="last_name">Ваше фамилия</label>
-                                </div>
+                                <p>Вступайте в Клуб TOY.RU и получайте скидки на игрушки для детей! Просто добавьте информацию о Дне Рождения ребенка - и Вы в Клубе! Можно указать не только своих детей, но и детей Ваших друзей и друзей Ваших детей. Вы можете добавить максимум 6 детей.</p>
+                                <p>Каждый раз, за 2 недели до Дня Рождения ребенка, мы будем высылать Вам письмо с персональными скидками и спецпредложениями по кодовому слову. Промокод также будет доступен в личном кабинете в разделе Клуб TOY.RU на нашем сайте. Это отличный способ подготовиться к празднику и выбрать подарки!</p>
+                                <p><small>*Предложение распространяется исключительно на детей до 18 лет.</small></p>
+                                <p>Номинал скидок по промокоду:</p>
+                                <ul>
+                                    <li>5% на Lego, Peg Perego, Little Tikes (крупногабаритный), Mattel, Hasbro.</li>
+                                    <li>10% на остальной ассортимент.</li>
+                                </ul>
                             </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="patronymic" value="Иванович">
-                                    <label class="form-control-placeholder" for="patronymic">Ваше отчество</label>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Ограничения:</p>
+                                <ul>
+                                    <li>Промокод не распространяется на конструкторы LEGO, помеченные логотипом «АКЦИЯ ЛЕГО!».</li>
+                                    <li>Промокод не распространяется на раздел «Дефект упаковки».</li>
+                                    <li>Каждый промо-код может быть использован только один раз.</li>
+                                    <li>Промо-код может быть использован, как клиентами интернет-магазина toy.ru, так и пользователями, никогда ранее не делавшими покупок на сайте интернет-магазина toy.ru.</li>
+                                    <li>Заказ на товар должен быть оформлен через "корзину" сайта интернет-магазина toy.ru только по ссылке со страницы акции.</li>
+                                    <li>Скидка по промо-коду не подразумевает возврат суммы скидки в денежном эквиваленте в любых формах.</li>
+                                    <li>Условия проведения акции могут быть изменены организатором без предварительного уведомления.</li>
+                                    <li>Использование промо-кода означает Ваше согласие с приведенными выше условиями.</li>
+                                </ul>
                             </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="dob">
-                                    <label class="form-control-placeholder" for="dob">Ваша дата рождения</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="phone">
-                                    <label class="form-control-placeholder" for="phone">Ваш телефон</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="email">
-                                    <label class="form-control-placeholder" for="email">Ваш E-mail</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="jur_face">
-                                    <label class="form-check-label" for="jur_face">Юридическое лицо</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary text-uppercase w-100">Сохранить изменения</button>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="password">
-                                    <label class="form-control-placeholder" for="password">Пароль</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="password2">
-                                    <label class="form-control-placeholder" for="password2">Подтвердите пароль</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-secondary text-uppercase w-100">Сохранить изменения</button>
-                                </div>                             
-                            </div>
-                        </form>
+                        </div>
 
                     </div>
                 </div>
@@ -503,21 +515,6 @@
 
     </div>
     <!-- end #panel -->
-
-    <script>
-/*
-        $(document).ready(function(){ 
-            $('form').find(".form-control").each(function(ev) {
-                if($(this).val()) { 
-                    $(this).next('.form-control-placeholder').addClass('placeholder-clear');
-                } else {
-                    $(this).next('.form-control-placeholder').removeClass('placeholder-clear');
-                };
-            });
-        }); */
-
-
-    </script>
 
 </body>
 

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Личный кабинет. Избранное</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0" data-method="offset" class="position-relative">
+
+    //= template/mobile-menu.html
+
+    <div id="panel" class="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Личный кабинет</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Избранное</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-3">
+                        //= template/lk-sidebar.html
+                    </div>
+
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="page-title">Избранное</h1>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+</body>
+
+</html>
