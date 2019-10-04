@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Страница каталога. Товары</title>
+</head>
+
+<body>
+
+    //= template/mobile-menu.html
+
+    <div id="panel" class="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+<style>
+
+.sidebar {
+	width: 100%;
+}
+
+.sidebar-toggle,.sidebar-close {
+	display: none;
+}
+
+@media (max-width: 991px) {
+	.sidebar-offcanvas {
+		position: fixed;
+		top: 0;
+		width: 320px;
+		height: 100%;
+		padding: 42px 24px 30px;
+		background-color: #fff;
+		box-shadow: 0 0 0 0 rgba(0,0,0,0.15);
+		z-index: 9910;
+		overflow-y: auto;
+		-ms-overflow-style: none;
+	}
+	.sidebar-offcanvas.position-right {
+		right: -320px;
+		transition: right 0.4s cubic-bezier(0.785,0.135,0.15,0.86) 0.3s,box-shadow 0.3s 0.3s;
+	}
+	.sidebar-offcanvas.position-left {
+		left: -320px;
+		transition: left 0.4s cubic-bezier(0.785,0.135,0.15,0.86) 0.3s,box-shadow 0.3s 0.3s;
+	}
+	.sidebar-offcanvas.open {
+		box-shadow: 0 0 50px 3px rgba(0,0,0,0.15);
+	}
+	.sidebar-offcanvas.open.position-right {
+		right: 0;
+	}
+	.sidebar-offcanvas.open.position-left {
+		left: 0;
+	}
+
+	.sidebar-close {
+		display: block;
+		position: absolute;
+		top: 108px;
+		right: 15px;
+		color: #606060;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.sidebar-offcanvas::-webkit-scrollbar {
+		display: none;
+	}
+
+	.sidebar-toggle {
+		display: block;
+		position: fixed;
+		top: 190px;
+		width: 48px;
+		height: 48px;
+		margin-top: -24px;
+		background-color: #fff;
+		color: #606060;
+		font-size: 24px;
+		line-height: 48px;
+		text-align: center;
+		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
+		cursor: pointer;
+		z-index: 990;
+	}
+
+	.sidebar-toggle.position-right {
+		right: 0;
+		transition: right .3s ease-in-out;
+	}
+
+	.sidebar-toggle.position-right.sidebar-open {
+		right: -48px;
+	}
+
+	.sidebar-toggle.position-left {
+		left: 0;
+		transition: left .3s ease-in-out;
+	}
+
+	.sidebar-toggle.position-left.sidebar-open {
+		left: -48px;
+	}
+}
+
+</style>
+
+
+        <main id="main" class="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Настольные игры</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Каталог продукции</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-3"><!-- d-none d-lg-block  -->
+
+                        <!--Кнопка открывающая боковое меню-->
+                        <div class="sidebar-toggle position-left icon-list"></div>
+                        <!--///-->
+                        <aside class="sidebar sidebar-offcanvas position-left">
+                            <!--Кнопка закрывающая боковое меню-->
+                            <span class="sidebar-close icon-close"></span>
+                            <!--///-->
+
+                            //= template/gift-picking.html
+                        </aside>
+
+                    </div>
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="page-title">Настольные игры</h1>
+
+                        <div class="row mb-2">
+                            <div class="col-12 col-lg-4">
+                                //= template/pagination.html
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="sorting-block">Сортировать по: <span>цена</span><span>популярность</span><span>скидка</span><span>рейтинг</span><span>новинкам</span></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                //= template/pagination.html
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+    <script>
+        $(document).ready(function(a) {
+
+            $(".sidebar-close").on("click", function() {
+                $(".sidebar-toggle").click();
+            });
+            
+            $(".sidebar-toggle").on("click", function() {
+                $(this).toggleClass("sidebar-open");
+                $(".sidebar").toggleClass("open");
+            });
+
+        //   function c() {n.removeClass("open")}
+        //   var j = a(".sub-menu-toggle");
+        //   a("").on("click"), 
+        //     function(b, c, d) {
+        //         a(b).on("click", function() {
+        //             a(this).addClass("sidebar-open"), c().addClass("open")
+        //         }), a(d).on("click", function() {
+        //             a(b).removeClass("sidebar-open"), c().removeClass("open")
+        //         })
+        //     }(".sidebar-toggle", ".sidebar-offcanvas",".sidebar-close");
+        });
+    </script>
+
+</body>
+
+</html>

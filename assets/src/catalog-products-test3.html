@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Страница каталога. Товары</title>
+</head>
+
+<body>
+
+    //= template/mobile-menu.html
+
+    <div id="offcanvas-filters">
+
+    </div>
+
+    <div id="panel" class="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Настольные игры</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Каталог продукции</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-3">
+                        <div class="sidebar">
+                            //= template/gift-picking.html
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="page-title">Настольные игры</h1>
+
+                        <div class="text-right"><button class="btn btn-secondary toggle-button-filters">Фильтры</button></div>
+
+                        <div class="row mb-2">
+                            <div class="col-12 col-lg-4">
+                                //= template/pagination.html
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="sorting-block">Сортировать по: <span>цена</span><span>популярность</span><span>скидка</span><span>рейтинг</span><span>новинкам</span></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                                //= template/card.html
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                //= template/pagination.html
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+    <script>
+
+        var slideoutFilters = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('offcanvas-filters'),
+            'padding': 256,
+            'tolerance': 70,
+            'side': 'right'
+        });
+    
+        // Toggle button
+        document.querySelector('.toggle-button-filters').addEventListener('click', function() {
+            slideoutFilters.toggle();
+        });
+
+        function closeFilters(eve) {
+            eve.preventDefault();
+            slideoutFilters.close();
+        }
+
+        slideoutFilters
+            .on('beforeopen', function () {
+                
+                $('#offcanvas-menu').css("z-index","0");
+                $('#offcanvas-filters').css("z-index","1");
+
+                $('.sidebar').children().clone().appendTo("#offcanvas-filters");
+                $('.sidebar').children().detach();
+                
+                this.panel.classList.add('panel-open');
+            })
+            .on('open', function () {
+                this.panel.addEventListener('click', closeFilters);
+            })
+            .on('beforeclose', function () {
+
+                $('#offcanvas-menu').css("z-index","1");
+                $('#offcanvas-filters').css("z-index","0");
+
+                $('#offcanvas-filters').children().clone().appendTo(".sidebar");
+                $('#offcanvas-filters').children().detach();
+
+                this.panel.classList.remove('panel-open');
+                this.panel.removeEventListener('click', closeFilters);
+            });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

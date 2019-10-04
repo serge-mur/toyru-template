@@ -1,0 +1,1 @@
+<img src="<?=SITE_TEMPLATE_PATH?>/img/logo_toyru.svg" alt="Интернет магазин игрушек Toy.ru">

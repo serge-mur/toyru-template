@@ -8678,6 +8678,9 @@ body {
   .card-children.active {
     background: url(../img/confetti.png) no-repeat 0 0, url(../img/confetti.png) no-repeat 100% 0, #f6f6f6; }
 
+.items-header {
+  color: #adadad; }
+
 /* other css */
 .btn-secondary {
   color: #fff !important; }

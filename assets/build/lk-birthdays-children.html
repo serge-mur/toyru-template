@@ -218,11 +218,11 @@
                                     <li><a class="dropdown-item" href="#">Бластеры Нерф</a></li>
                                     <li class="dropdown-submenu">
                                         <a class="dropdown-item" href="#">Игровые наборы</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Минифигурки</a></li>
-                                            <li><a class="dropdown-item" href="#">Динозавры</a></li>
-                                            <li><a class="dropdown-item" href="#">Трансформеры</a></li>     
-                                        </ul>                                               
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Минифигурки</a>
+                                            <a class="dropdown-item" href="#">Динозавры</a>
+                                            <a class="dropdown-item" href="#">Трансформеры</a>     
+                                        </div>                                               
                                     </li>
                                     <li><a class="dropdown-item" href="#">Игрушки для малышей</a></li>
                                     <li><a class="dropdown-item" href="#">Интерактивные игрушки</a></li>
@@ -239,7 +239,7 @@
                                             <li><a class="dropdown-item" href="#">Коллекционные машинки</a></li>
                                             <li><a class="dropdown-item" href="#">Летательные аппараты</a></li>     
                                             <li><a class="dropdown-item" href="#">Железные дороги и паравозики</a></li>     
-                                        </ul>                              
+                                        </ul>
                                     </li>
                                     <li><a class="dropdown-item" href="#">Всё для праздника</a></li>
                                     <li><a class="dropdown-item" href="#">Косметика и аксессуары</a></li>
@@ -329,9 +329,9 @@
                         <h1 class="page-title">Дни рождения детей</h1>
 
                         <div class="row">
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-6 order-1 order-lg-0">
                                 <div class="row">
-                                    <div class="col-6 mb-4">
+                                    <div class="col-12 col-sm-6 mb-4">
                                         <div class="card card-children">
                                             <img src="img/boy.svg" class="card-img-top" alt="">
                                             <div class="card-body">
@@ -343,7 +343,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-4">
+                                    <div class="col-12 col-sm-6 mb-4">
                                         <div class="card card-children active">
                                             <img src="img/girl.svg" class="card-img-top" alt="">
                                             <div class="card-body">
@@ -358,7 +358,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-4">
+                                    <div class="col-12 col-sm-6 mb-4">
                                         <div class="card card-children">
                                             <img src="img/girl.svg" class="card-img-top" alt="">
                                             <div class="card-body">
@@ -370,16 +370,45 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-4 d-flex justify-content-center align-items-center">
+                                    <!-- <div class="col-12 col-sm-6 mb-4 d-flex justify-content-center align-items-center">
                                         <a href="#">+ добавить</a>
+                                    </div> -->
+                                    <div class="col-12 col-sm-6 mb-4">
+                                        <div class="card card-children">
+                                            <div class="card-body">
+                                                <div class="card-text">
+                                                    <form>
+                                                        <div class="form-group mb-2">
+                                                            <label for="name">Имя ребенка</label>
+                                                            <input type="text" class="form-control form-control-sm" id="name" placeholder="Введите имя">
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <label for="dob">Дата рождения ребенка</label>
+                                                            <input type="date" class="form-control form-control-sm" id="dob" placeholder="Введите дату">
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    Мальчик
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                    Девочка
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-primary btn-sm w-100 mt-2">Добавить ребенка</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-6"></div>
-                                    <div class="col-6"></div>
-                                    <div class="col-6"></div>
-                                    <div class="col-6"></div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-6 order-0 order-lg-1">
                                 <p>Вступайте в Клуб TOY.RU и получайте скидки на игрушки для детей! Просто добавьте информацию о Дне Рождения ребенка - и Вы в Клубе! Можно указать не только своих детей, но и детей Ваших друзей и друзей Ваших детей. Вы можете добавить максимум 6 детей.</p>
                                 <p>Каждый раз, за 2 недели до Дня Рождения ребенка, мы будем высылать Вам письмо с персональными скидками и спецпредложениями по кодовому слову. Промокод также будет доступен в личном кабинете в разделе Клуб TOY.RU на нашем сайте. Это отличный способ подготовиться к празднику и выбрать подарки!</p>
                                 <p><small>*Предложение распространяется исключительно на детей до 18 лет.</small></p>

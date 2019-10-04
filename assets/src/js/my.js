@@ -63,19 +63,30 @@ fixed.addEventListener('touchmove', function(e) {
 }, false);
 
 
-// Dropdown menu
+// Dropdown main menu   
+var firstLevelTop, secondLevelTop, firstLevelHeight, firstLevelWidth, mainMenuWidth;
 $(".btn-group, .dropdown").hover(
     function () {
         $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
         $(this).addClass('open');
-        console.log('addClass open');
+        firstLevelTop = $('#main-menu>.nav-item>.nav-link+.dropdown-menu').offset().top;
+        firstLevelHeight = $('#main-menu>.nav-item>.nav-link+.dropdown-menu').outerHeight();
+        firstLevelWidth = $('#main-menu>.nav-item>.nav-link+.dropdown-menu').outerWidth();
+        mainMenuWidth = $('#main-menu').outerWidth();
     },
     function () {
         $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
         $(this).removeClass('open');
-        console.log('removeClass open');
     });
 
+    $('.dropdown-submenu>.dropdown-item').hover(function() {
+        secondLevelTop = $(this).offset().top;
+        $(this).next('.dropdown-menu').css({
+            "top": firstLevelTop-secondLevelTop,
+            "height": firstLevelHeight,
+            "width": mainMenuWidth-firstLevelWidth
+        });
+    });
 
 $(document).ready(function () {
 
