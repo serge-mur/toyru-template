@@ -344,6 +344,24 @@ body {
 
 .dropdown-submenu {
     position: relative;
+    .dropdown-menu {
+        column-count: 3;
+        padding: 120px 0;
+        .top-block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5rem;
+        }
+        .bottom-block {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: .5rem;
+        }
+    }
 }
 
 .dropdown-submenu> a:after {

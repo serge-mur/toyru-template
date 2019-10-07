@@ -8083,6 +8083,22 @@ body {
 
 .dropdown-submenu {
   position: relative; }
+  .dropdown-submenu .dropdown-menu {
+    -webkit-column-count: 3;
+            column-count: 3;
+    padding: 120px 0; }
+    .dropdown-submenu .dropdown-menu .top-block {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5rem; }
+    .dropdown-submenu .dropdown-menu .bottom-block {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: .5rem; }
 
 .dropdown-submenu > a:after {
   content: "»";

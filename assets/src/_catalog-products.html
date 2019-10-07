@@ -36,19 +36,14 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-lg-3"><!-- d-none d-lg-block -->
-                        <div class="sidebar">
-                            <a href="#" class="test-close">Закрыть</a>
-                            <h3>фильтр</h3>
+                    <div class="d-none d-lg-block col-lg-3">
+                        <h3>фильтр</h3>
 
-                            //= template/gift-picking.html
-                        </div>
+                        //= template/gift-picking.html
                     </div>
                     <div class="col-12 col-lg-9">
 
                         <h1 class="page-title">Настольные игры</h1>
-
-                        <a href="#" class="test">test</a>
 
                         <div class="row mb-2">
                             <div class="col-12 col-lg-4">
@@ -108,59 +103,6 @@
     </div>
     <!-- end #panel -->
 
-    <script>
-        $('.test').click(function() {
-           $('.sidebar').toggleClass('open'); 
-           $('.panel').toggleClass('panel-open'); 
-        });
-        $('.test-close').click(function() {
-            // $('.sidebar').toggleClass('open');
-            $('.test').click();
-        });
-
-        // $('.panel').click(function() {
-        //     if($('.sidebar').hasClass('open')) {
-        //         $('.test').click();                
-        //     }
-
-        // });
-
-    </script>
-    
-    <style>
-        @media (max-width: 991px) {
-            .sidebar {
-                /* display: none; */
-                /* visibility: hidden; */
-                /* opacity: 0; */
-
-                position: fixed;
-                top: 0;
-                height: 100%;
-                background-color: #fff;
-                box-shadow: 0 0 0 0 rgba(0,0,0,0.15);
-                z-index: 9910;
-                overflow-y: auto;
-                -ms-overflow-style: none;
-                
-                width: 0;
-                right: -320px;
-
-                transition: right .3s ease-in-out;                          
-            }
-            .sidebar.open {
-                /* display: block; */
-                /* visibility: visible; */
-                /* opacity: 1; */
-                width: 320px;
-                right: 0;
-                
-                box-shadow: 0 0 50px 3px rgba(0,0,0,0.15);
-                transition: right 0.4s cubic-bezier(0.785,0.135,0.15,0.86) 0.3s,box-shadow 0.3s 0.3s;
-        	}
-        }
-
-    </style>
 </body>
 
 </html>
