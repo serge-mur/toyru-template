@@ -1237,6 +1237,22 @@ body {
     }
 }
 
+// responsive tables
+@media (max-width: 39.9375em) {
+    .tablesaw-stack tbody tr {
+        border-bottom: none;
+        padding: 1.5rem 0;
+    }
+}
+.tablesaw-stack tbody td {
+    vertical-align: middle;
+}
+.tablesaw-stack tbody td img {
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+
 /* media query */
 @include media-breakpoint-up(lg) {
     body {

@@ -44,7 +44,7 @@
 
                         <h1 class="page-title">История заказов</h1>
 
-                        <ul class="nav">
+                        <ul class="nav nav-item">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Посмотреть текущие заказы</a>
                             </li>
@@ -53,61 +53,80 @@
                             </li>
                         </ul>
 
-                        <div class="items-header d-none d-lg-block">
-                            <div class="row">
-                                <div class="col-1">№</div>                                    
-                                <div class="col-2"></div>                                    
-                                <div class="col-4">Товар</div>
-                                <div class="col-1">Кол-во</div>
-                                <div class="col-1">Цена</div>
-                                <div class="col-1">Скидка</div>
-                                <div class="col-1">Сумма</div>
-                                <div class="col-1">Оплата</div>
-                            </div>
-                        </div>
-                        
                         <div class="items-block">
                             
-                            <div class="item mb-4">
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col-12 col-lg-1">
-                                        <span>1</span>
-                                    </div>
-                                    <div class="col-12 col-lg-2">
-                                        <a href="#">
-                                            <img class="img-fluid" src="img/cart_item.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div>L.O.L. Surprise Гламурная кукла-нимфетка</div>
-                                        <div>Артикул: <span>559658</span></div>                                        
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Кол-во: </span>1</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Цена: </span>1000 руб.</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Скидка: </span>0%</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <div><span class="d-lg-none">Сумма: </span>1000 руб.</div>
-                                    </div>
-                                    <div class="col-12 col-lg-1">
-                                        <span>Наличные</span>
-                                    </div>
-                                </div>
-                            </div><!-- end item -->
-
+                            <table class="table tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                                <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>&nbsp;</th>
+                                        <th>Товар</th>
+                                        <th class="text-nowrap">Кол-во</th>
+                                        <th>Цена</th>
+                                        <th>Скидка</th>
+                                        <th>Сумма</th>
+                                        <th>Оплата</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td data-tablesaw-no-labels>
+                                            <a href="#">
+                                                <img class="img-fluid" style="min-width: 50px;" src="img/cart_item.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td data-tablesaw-no-labels>
+                                            <div>L.O.L. Surprise Гламурная кукла-нимфетка</div>
+                                            <div>Артикул: <span>559658</span></div>
+                                        </td>
+                                        <td>1</td>
+                                        <td>1000&nbsp;руб.</td>
+                                        <td>10%</td>
+                                        <td>900&nbsp;руб.</td>
+                                        <td>Наличные</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td data-tablesaw-no-labels>
+                                            <a href="#">
+                                                <img class="img-fluid" src="img/card/slide_01.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td data-tablesaw-no-labels>
+                                            <div>L.O.L. Surprise Гламурная кукла-нимфетка</div>
+                                            <div>Артикул: <span>559658</span></div>
+                                        </td>
+                                        <td>1</td>
+                                        <td>1000 руб.</td>
+                                        <td>10%</td>
+                                        <td>900 руб.</td>
+                                        <td>Наличные</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td data-tablesaw-no-labels>
+                                            <a href="#">
+                                                <img class="img-fluid" src="img/product_01.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td data-tablesaw-no-labels>
+                                            <div>L.O.L. Surprise Гламурная кукла-нимфетка</div>
+                                            <div>Артикул: <span>559658</span></div>
+                                        </td>
+                                        <td>1</td>
+                                        <td>1000 руб.</td>
+                                        <td>10%</td>
+                                        <td>900 руб.</td>
+                                        <td>Наличные</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             
                         </div>
-
-
 
                     </div>
                 </div>
-
 
             </div>
 
